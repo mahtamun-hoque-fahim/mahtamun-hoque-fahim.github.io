@@ -1,5 +1,5 @@
 body{
   background: linear-gradient(0deg,red,yellow);
-  repeat:no-repeat;
+  background-repeat:no-repeat;
   
 }
