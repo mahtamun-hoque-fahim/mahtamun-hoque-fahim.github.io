@@ -2,8 +2,6 @@ body{
   background: linear-gradient(110deg,red,yellow);
   background-repeat:no-repeat;
 }
-
-}
 #facebook{
   font-size: 50px;
   color: #ffffff;
@@ -16,7 +14,8 @@ body{
   text-align: center;
   padding: 10px 10px 10px 10px 
 
-  width:150px;height:150px;
+  width:150px;
+  height:150px;
   
   background-color: #eed;
   box-shadow: 10px -10px  rgba(0,0,0,0.6);
@@ -37,7 +36,8 @@ body{
   text-align: center;
   padding: 10px 10px 10px 10px
 
-  width:150px;height:150px;
+  width:150px;
+  height:150px;
   
   background-color: #eed;
   box-shadow: 10px -10px  rgba(0,0,0,0.6);
@@ -56,9 +56,10 @@ body{
   font-size: 50px;
   color: #850000;
   text-align: center;
-  padding: 10px 10px 10px 10px 
+  padding: 10px 10px 10px 10px ;
 
-  width:150px;height:150px;
+  width:150px;
+  height:150px;
   
   background-color: #eed;
   box-shadow: 10px -10px  rgba(0,0,0,0.6);
