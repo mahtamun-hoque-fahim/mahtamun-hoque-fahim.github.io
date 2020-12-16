@@ -1,5 +1,68 @@
 body{
   background: linear-gradient(110deg,red,yellow);
   background-repeat:no-repeat;
-  
 }
+
+}
+#facebook{
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px 10px 10px ;
+}
+#facebook:hover{
+  font-size: 50px;
+  color: #3b5998;
+  text-align: center;
+  padding: 10px 10px 10px 10px 
+
+  width:150px;height:150px;
+  
+  background-color: #eed;
+  box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -o-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  border-radius:100px;
+}
+#github{
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px 10px 10px ;
+}
+#github:hover{
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  padding: 10px 10px 10px 10px
+
+  width:150px;height:150px;
+  
+  background-color: #eed;
+  box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -o-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  border-radius:100px;
+}
+#mail{
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 10px 10px 10px ;
+}
+#mail:hover{
+  font-size: 50px;
+  color: #850000;
+  text-align: center;
+  padding: 10px 10px 10px 10px 
+
+  width:150px;height:150px;
+  
+  background-color: #eed;
+  box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  -o-box-shadow: 10px -10px  rgba(0,0,0,0.6);
+  border-radius:100px;
