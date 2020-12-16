@@ -1,6 +1,69 @@
 body{
-  background: linear-gradient(110deg,red,yellow);
-  background-repeat:no-repeat;
+  background: linear-gradient(0deg,#01BBBD,#02AFFF);
+  
+}
+.container-color{
+
+  background:linear-gradient(0deg,#01BBBD,#02AFFF);
+}
+#My-pic-header{
+  margin: 10px 10px 5px 10px;
+}
+#navbar-logo{
+  height: 50px;
+  width: 120px;
+}
+.circle{
+  background-color: #A63067;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.circle:hover{
+  background-color: #c7005d;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#icon{
+  color: white;
+  font-size: 50px;
+}
+.container-end{
+  border-spacing: 10px;
+}
+.shadow-lg{
+  box-shadow: 10px 10px 20px black !important;
+}
+.form-space{
+  margin: 20px 10px 20px 10px;
+}
+.form-color{
+  background-color: cadetblue;
+}
+.shadow-lg-footer{
+  box-shadow: 10px -6px 40px black !important;
+}
+.button-color{
+  background-color: #845EC2;
+  box-shadow: 10px 10px 20px black;
+}
+.button-color:hover{
+  background-color: #a974ff;
+  box-shadow: 10px 10px 30px black;
+}
+.hov-shed:hover{
+  box-shadow: 10px 10px 20px black !important;
+}
+
+.port-hov{
+  box-shadow: 10px 10px 20px rgb(0, 0, 0) !important;
+}
+.port-hov:hover{
+  box-shadow: 10px 10px 30px rgb(0, 0, 0) !important;
+}
+.inner-form{
+  background-color: #424242;
 }
 #facebook{
   font-size: 50px;
@@ -14,8 +77,7 @@ body{
   text-align: center;
   padding: 10px 10px 10px 10px 
 
-  width:150px;
-  height:150px;
+  width:150px;height:150px;
   
   background-color: #eed;
   box-shadow: 10px -10px  rgba(0,0,0,0.6);
@@ -36,8 +98,7 @@ body{
   text-align: center;
   padding: 10px 10px 10px 10px
 
-  width:150px;
-  height:150px;
+  width:150px;height:150px;
   
   background-color: #eed;
   box-shadow: 10px -10px  rgba(0,0,0,0.6);
@@ -56,10 +117,9 @@ body{
   font-size: 50px;
   color: #850000;
   text-align: center;
-  padding: 10px 10px 10px 10px ;
+  padding: 10px 10px 10px 10px 
 
-  width:150px;
-  height:150px;
+  width:150px;height:150px;
   
   background-color: #eed;
   box-shadow: 10px -10px  rgba(0,0,0,0.6);
