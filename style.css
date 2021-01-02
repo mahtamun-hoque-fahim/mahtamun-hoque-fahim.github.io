@@ -1,31 +1,50 @@
 body{
-  background: linear-gradient(0deg,#01BBBD,#02AFFF);
-  
+    font-family: 'Dosis';
+}
+.header-text{
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg ,rgb(82, 206, 255), rgb(0, 174, 255));
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.header-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.social-icons{
+    background: linear-gradient(90deg ,rgb(82, 206, 255), rgb(0, 174, 255));
+}
+.round{
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 50%;
+}
+.round:hover{
+    box-shadow: 0px 2px 30px #ffffff;
 }
 #facebook{
-  font-size: 50px;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 10px 10px 10px ;
-}
-#facebook:hover{
-   color: #3b5998;
-}
-#github{
-  font-size: 50px;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 10px 10px 10px ;
-}
-#github:hover{
-  color: #000000;
-}
-#mail{
-  font-size: 50px;
-  color: #ffffff;
-  text-align: center;
-  padding: 10px 10px 10px 10px ;
-}
-#mail:hover{
-  color: #850000;
-}
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 10px 10px 10px ;
+  }
+  #facebook:hover{
+     color: #3b5998;
+  }
+  #github{
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 10px 10px 10px ;
+  }
+  #github:hover{
+    color: #000000;
+  }
+  #mail{
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 10px 10px 10px ;
+  }
+  #mail:hover{
+    color: #850000;
+  }
