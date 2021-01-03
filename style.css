@@ -1,5 +1,6 @@
 body{
     font-family: 'Dosis';
+    background-color: rgb(73, 197, 255);
 }
 .header-text{
     text-align: center;
@@ -46,4 +47,29 @@ body{
     width: 100%;
     background-color:rgb(73, 197, 255);
     text-align: center;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      font-size: .75em;
+    }
+    /* 20% {
+      font-size: 1em;
+    }
+    40% {
+      font-size: .75em;
+    } */
+    50% {
+      font-size: 1em;
+    }
+    /* 80% {
+      font-size: .75em;
+    } */
+    100% {
+      font-size: .75em;
+    }
+  }
+  #heart {
+    color: white;
+    animation: heartbeat 1s infinite;
   }
