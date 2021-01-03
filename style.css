@@ -4,7 +4,7 @@ body{
 .header-text{
     text-align: center;
     color: white;
-    background: linear-gradient(90deg ,rgb(82, 206, 255), rgb(0, 174, 255));
+    background-color:rgb(73, 197, 255);
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -14,12 +14,12 @@ body{
     margin-right: auto;
 }
 .social-icons{
-    background: linear-gradient(90deg ,rgb(82, 206, 255), rgb(0, 174, 255));
+  background-color:rgb(73, 197, 255);
 }
 .round{
     border: 1px solid white;
-    display: inline-block;
     border-radius: 50%;
+    display: inline-block;
 }
 .round:hover{
     box-shadow: 0px 2px 30px #ffffff;
@@ -29,22 +29,21 @@ body{
     text-align: center;
     padding: 10px 10px 10px 10px ;
   }
-  #facebook:hover{
-     color: #3b5998;
-  }
   #github{
     color: #ffffff;
     text-align: center;
     padding: 10px 10px 10px 10px ;
-  }
-  #github:hover{
-    color: #000000;
   }
   #mail{
     color: #ffffff;
     text-align: center;
     padding: 10px 10px 10px 10px ;
   }
-  #mail:hover{
-    color: #850000;
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(0, 174, 255);
+    text-align: center;
   }
