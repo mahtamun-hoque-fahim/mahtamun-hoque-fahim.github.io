@@ -4,7 +4,7 @@ body{
 .header-text{
     text-align: center;
     color: white;
-    background-color:rgb(73, 197, 255);
+    background-color:rgb(0, 174, 255);
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -14,7 +14,7 @@ body{
     margin-right: auto;
 }
 .social-icons{
-  background-color:rgb(73, 197, 255);
+  background-color:rgb(0, 174, 255);
 }
 .round{
     border: 1px solid white;
@@ -40,10 +40,10 @@ body{
     padding: 10px 10px 10px 10px ;
   }
   .footer {
-    position: fixed;
+    position:sticky;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:rgb(0, 174, 255);
+    background-color:rgb(73, 197, 255);
     text-align: center;
   }
