@@ -25,6 +25,15 @@ body{
 .round:hover{
     box-shadow: 0px 0px 50px 2px #ffffff;
 }
+.fab{
+  font-size: 30px;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .fab{
+    font-size: 20px;
+  }
+}
 #facebook{
     color: #ffffff;
     text-align: center;
