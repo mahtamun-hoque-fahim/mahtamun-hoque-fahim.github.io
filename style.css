@@ -70,6 +70,18 @@ body{
     text-align: center;
     padding: 10px 10px 10px 10px;
   }
+  p{
+    text-align: center;
+  }
+  .aboutMe{
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .aboutMe{
+      font-size: 20px;
+    }
+  }
   .footer {
     position:sticky;
     left: 0;
