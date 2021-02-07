@@ -2,6 +2,9 @@ body{
     font-family: 'Dosis';
     background-color: rgb(73, 197, 255);
 }
+html{
+  scroll-behavior: smooth;
+}
 .header-text{
     text-align: center;
     color: white;
