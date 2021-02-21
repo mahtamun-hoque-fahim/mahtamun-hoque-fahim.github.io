@@ -1,9 +1,12 @@
 body{
-    font-family: 'Dosis';
+    font-family: 'Dosis',Segoe UI , San-Serif;
+    font-weight:lighter;
     background-color: rgb(73, 197, 255);
+    scroll-behavior: smooth;
+    outline:none;
 }
-html{
-  scroll-behavior: smooth;
+a{
+    outline:0;
 }
 .header-text{
     text-align: center;
