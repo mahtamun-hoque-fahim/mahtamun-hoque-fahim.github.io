@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
 body{
-    font-family: 'Dosis',Segoe UI , San-Serif;
+    font-family: 'Poppins',Segoe UI , San-Serif;
     font-weight:lighter;
-    background-color: rgb(73, 197, 255);
+    background-color:#00273d; /*my previous favourite color- rgb(73, 197, 255); */
     scroll-behavior: smooth;
     outline:none;
 }
@@ -11,7 +14,7 @@ a{
 .header-text{
     text-align: center;
     color: white;
-    background-color:rgb(0, 174, 255);
+    background-color:#00273d /*my previous favourite color -rgb(0, 174, 255); */;
     padding-top: 5%;
     padding-bottom: 5%;
 }
@@ -21,7 +24,7 @@ a{
     margin-right: auto;
 }
 .social-icons{
-  background-color:rgb(0, 174, 255);
+  background-color:#00273d;
 }
 .round{
     border: 1px solid white;
@@ -29,16 +32,13 @@ a{
     display: inline-block;
 }
 .round:hover{
-    box-shadow: 0px 0px 50px 2px #ffffff;
+    box-shadow: 0px 0px 50px 2px  #43a1d8;
 }
 .fab{
   font-size: 30px;
 }
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .fab{
-    font-size: 20px;
-  }
 }
 #facebook{
     color: #ffffff;
@@ -93,6 +93,9 @@ a{
   }
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
+    .header-pic{
+      height: 40vh;
+    }
     .aboutMe{
       font-size: 20px;
     }
@@ -102,8 +105,9 @@ a{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color:rgb(73, 197, 255);
+    background-color: #063855;      /*my previous favourite color rgb(73, 197, 255);*/
     text-align: center;
+    color: white;
   }
   @keyframes heartbeat {
     0% {
