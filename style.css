@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/*key colors #00273d--dark blue
+              #063855 --dark blue(light)
+              #43a1d8 --hover color 
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins' , 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #00273d;
+  color: #ffffff;
+}
+/* -------------------home section --------------------*/
+
+
+body > section.home{
+  background-color: #000000;
+  transition: 1s;
+  box-shadow: inset 100vw 0vh 0px #00273d;
+}
+body > section.home > div.home-texts{
+  padding: 40vh;
+  padding-left: 4vw;
+  padding-right: 0;
+}
+body > section.home > div.home-texts > h1{
+  font-size: 100px;
+  transition: 1.5s;
+  box-shadow: inset 100vw 0px 0px #00273d;
+  animation: nameglow 1s 1;
+
+}
+@keyframes nameglow{
+  0%{
+    text-shadow: 0px 0px 50px #063855;
+  }
+  100%{
+      text-shadow: 0px 0px 10px #46bbff;
+  }
+}
+body > section.home > div.home-texts > h3{
+  background-color: #46bbff;
+  transition:.5s;
+  box-shadow: inset 100vw 0px 0px #00273d;
+}
+
+body > section.home > div.home-texts > h3#i-am{
+  font-size: 30px;
+  transition: 1.5s;
+  box-shadow: inset 100vw 0px 0px #00273d;
+}
+
+
+/*  -----------------about me section ------------------------*/
+
+
+
+body > section.about-me {
+  text-align: center;
+  padding: 10vh 20vw;
+  transition: 3.5s;
+  box-shadow: inset 0vw 100vh 0px #063855;
+  background-color: #063855;
+}
+body > section.about-me > h2{
+  padding-bottom: 3vh;
+}
+body > section.about-me > p {
+  font-size: 20px;
+}
+body > section.about-me > hr {
+  margin: 0 20vw;
+  color: black;
+}
+body > section.about-me > div.empty {
+  height: 5vh;
+}
+body > section.about-me > div.space{
+  height: 5vh;
+}
+
+
+
+/* --------------------------my love(s) section ----------------*/
+
+
+body > section.i-can-use {
+  text-align: center;
+  padding: 10vh 20vw;
+  transition: 3.5s;
+  background-color: #00273d;
+
+}
+body > section.i-can-use > h2{
+  padding-bottom: 3vh;
+}
+body > section.i-can-use > hr {
+  margin: 0 20vw;
+  color: white;
+}
+body > section.i-can-use > div.empty {
+  height: 5vh;
+}
+body > section.i-can-use > div.icons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body > section.i-can-use > div.icons > div.icon{
+  padding: 2vh;
+  font-size: 30px;
+}
+body > section.i-can-use > div.icons > div.icon:hover{
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px #063855;
+}
+
+
+
+/* ---------------------contact section ------------------------------*/
+
+
+body > section.wanna-talk {
+  background-color: #063855;
+  padding: 10vh 20vw;
+  text-align: center;
+}
+body > section.wanna-talk > h2{
+  padding-bottom: 3vh;
+  text-align: center;
+}
+body > section.wanna-talk > hr {
+  margin: 0 20vw;
+  color: white;
+}
+body > section.wanna-talk > div.empty {
+  height: 5vh;
+}
+body > section.wanna-talk > div.all-input{
+  background-color: #00273d;
+  border-radius: 30px;
+  padding: 5vh 5vw;
+  box-shadow: 0px 0px 30px #000000;
+}
+body > section.wanna-talk > div.all-input > form > div.input{
+  padding: 1.5vh;
+}
+body > section.wanna-talk > div.all-input > form > div.input > input#name , input#mail{
+  border: 0;
+  border-radius: 30px;
+  padding: 1vh 5vw;
+  outline: none;
+  box-shadow: 0px 0px 30px #222222;
+}
+body > section.wanna-talk > div.all-input > form > div.input > input#text{
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 20vw;
+  padding: 0 5vw;
+  height: 20vh;
+  box-shadow: 0px 0px 30px #1a1a1a;
+}
+body > section.wanna-talk > div.all-input > form > div.send{
+  padding-top: 3vh;
+}
+body > section.wanna-talk > div.all-input > form > div.send > button{
+  border: none;
+  border-radius: 30px;
+  background-color: #063855;
+  color: #ffffff;
+  box-shadow: 0px 0px 30px #000000;
+  font-size: 15px;
+  padding: 2.5vh 8vw;
+}
+body > section.wanna-talk > div.all-input > form > div.send > button:hover{
+  background-color: #46bbff;
+  color: #00273d;
+  box-shadow: 0px 0px 30px #2e2e2e;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body > section.home > div.home-texts{
+    padding: 25vh;
+    padding-left: 10vw;
+    padding-right: 0;
+  }
+  body > section.home > div.home-texts > h1{
+    font-size: 55px;
+  }
+  body > section.home > div.home-texts > h3#i-am{
+    font-size: 20px;
+  }
+
+  /* about me section --------------------------------*/
+
+  body > section.about-me {
+    padding: 5vh 10vw;
+  }
+  body > section.about-me > hr {
+    margin: 0 25vw;
+    color: #ffffff;
+  }
+
+  /* my love(s) section---------------------------------- */
+
+
+  body > section.i-can-use > hr {
+    margin: 0 2vw;
+    color: white;
+  }
+
+  /* contact section--------------------------------------- */
+  
+  body > section.wanna-talk > hr {
+    margin: 0 10vw;
+    color: white;
+  }
+  body > section.wanna-talk > div.all-input{
+    background-color: #00273d;
+    border-radius: 30px;
+    width: 50vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body > section.wanna-talk > div.all-input > form > div.input{
+    padding: 1.5vh;
+  }
+  body > section.wanna-talk > div.all-input > form > div.input > input#name , input#mail{
+    border: 0;
+    border-radius: 30px;
+    padding: 1vh;
+    width: 40vw;
+    outline: none;
+  }
+  body > section.wanna-talk > div.all-input > form > div.input > input#text{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 35vw;
+    padding: 0 5vw;
+    height: 20vh;
+  }
+  body > section.wanna-talk > div.all-input > form > div.send{
+    padding-top: 3vh;
+  }
+  body > section.wanna-talk > div.all-input > form > div.send > button{
+    border: none;
+    border-radius: 30px;
+    background-color: #063855;
+    color: #ffffff;
+    box-shadow: 0px 0px 30px #000000;
+    font-size: 15px;
+    padding: 1.5vh 6vw;
+  }
+  body > section.wanna-talk > div.all-input > form > div.send > button:hover{
+    background-color: #46bbff;
+    color: #00273d;
+    box-shadow: 0px 0px 30px #2e2e2e;
+  }
+  
+  
+
+
+}
