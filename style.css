@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-/*key colors #00273d--dark blue
-              #063855 --dark blue(light)
-              #43a1d8 --hover color 
+/*
+              delta-bright blue #43e8ed
+                    dark blue ##5e17eb
 */
+:root{
+  --light-blue :#43e8ed;
+  --dark-blue : #0b0021;
+}
+
 
 *{
   margin: 0;
@@ -12,7 +17,7 @@
   scroll-behavior: smooth;
 }
 body{
-  background-color: #00273d;
+  background-color: var(--dark-blue);
   color: #ffffff;
 }
 /* -------------------home section --------------------*/
@@ -21,7 +26,7 @@ body{
 body > section.home{
   background-color: #000000;
   transition: 1s;
-  box-shadow: inset 100vw 0vh 0px #00273d;
+  box-shadow: inset 100vw 0vh 0px var(--dark-blue);
 }
 body > section.home > div.home-texts{
   padding: 40vh;
@@ -31,28 +36,18 @@ body > section.home > div.home-texts{
 body > section.home > div.home-texts > h1{
   font-size: 100px;
   transition: 1.5s;
-  box-shadow: inset 100vw 0px 0px #00273d;
-  animation: nameglow 1s 1;
-
-}
-@keyframes nameglow{
-  0%{
-    text-shadow: 0px 0px 50px #063855;
-  }
-  100%{
-      text-shadow: 0px 0px 10px #46bbff;
-  }
+  box-shadow: inset 100vw 0px 0px var(--dark-blue);
 }
 body > section.home > div.home-texts > h3{
-  background-color: #46bbff;
+  background-color: var(--light-blue);
   transition:.5s;
-  box-shadow: inset 100vw 0px 0px #00273d;
+  box-shadow: inset 100vw 0px 0px var(--dark-blue);
 }
 
 body > section.home > div.home-texts > h3#i-am{
   font-size: 30px;
   transition: 1.5s;
-  box-shadow: inset 100vw 0px 0px #00273d;
+  box-shadow: inset 100vw 0px 0px var(--dark-blue);
 }
 
 
@@ -64,8 +59,9 @@ body > section.about-me {
   text-align: center;
   padding: 10vh 20vw;
   transition: 3.5s;
-  box-shadow: inset 0vw 100vh 0px #063855;
-  background-color: #063855;
+  box-shadow: inset 0vw 100vh 0px var(--light-blue);
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
 }
 body > section.about-me > h2{
   padding-bottom: 3vh;
@@ -75,7 +71,7 @@ body > section.about-me > p {
 }
 body > section.about-me > hr {
   margin: 0 20vw;
-  color: black;
+  color: var(--light-blue);
 }
 body > section.about-me > div.empty {
   height: 5vh;
@@ -93,7 +89,7 @@ body > section.i-can-use {
   text-align: center;
   padding: 10vh 20vw;
   transition: 3.5s;
-  background-color: #00273d;
+  background-color: var(--dark-blue);
 
 }
 body > section.i-can-use > h2{
@@ -116,7 +112,7 @@ body > section.i-can-use > div.icons > div.icon{
 }
 body > section.i-can-use > div.icons > div.icon:hover{
   border-radius: 20px;
-  box-shadow: 0px 0px 50px #063855;
+  box-shadow: 0px 0px 50px var(--light-blue);
 }
 
 
@@ -125,23 +121,24 @@ body > section.i-can-use > div.icons > div.icon:hover{
 
 
 body > section.wanna-talk {
-  background-color: #063855;
+  background-color: var(--light-blue);
   padding: 10vh 20vw;
   text-align: center;
 }
 body > section.wanna-talk > h2{
   padding-bottom: 3vh;
   text-align: center;
+  color: var(--dark-blue);
 }
 body > section.wanna-talk > hr {
   margin: 0 20vw;
-  color: white;
+  color: var(--light-blue);
 }
 body > section.wanna-talk > div.empty {
   height: 5vh;
 }
 body > section.wanna-talk > div.all-input{
-  background-color: #00273d;
+  background-color: var(--dark-blue);
   border-radius: 30px;
   padding: 5vh 5vw;
   box-shadow: 0px 0px 30px #000000;
@@ -171,16 +168,17 @@ body > section.wanna-talk > div.all-input > form > div.send{
 body > section.wanna-talk > div.all-input > form > div.send > button{
   border: none;
   border-radius: 30px;
-  background-color: #063855;
-  color: #ffffff;
-  box-shadow: 0px 0px 30px #000000;
+  background-color: var(--light-blue);
+  color: var(--dark-blue);
+  box-shadow:  0px 0px 30px #000000;
+  transition: .3s;
   font-size: 15px;
   padding: 2.5vh 8vw;
 }
 body > section.wanna-talk > div.all-input > form > div.send > button:hover{
-  background-color: #46bbff;
-  color: #00273d;
-  box-shadow: 0px 0px 30px #2e2e2e;
+  background-color: var(--dark-blue);
+  color: var(--light-blue);
+  text-shadow: 0px 0px 5px var(--light-blue);
 }
 
 @media only screen and (max-width: 600px) {
@@ -204,7 +202,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
   }
   body > section.about-me > hr {
     margin: 0 25vw;
-    color: #ffffff;
+    color: var(--light-blue);
   }
 
   /* my love(s) section---------------------------------- */
@@ -219,15 +217,15 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
   
   body > section.wanna-talk > hr {
     margin: 0 10vw;
-    color: white;
+    color: var(--light-blue);
   }
   body > section.wanna-talk > div.all-input{
-    background-color: #00273d;
     border-radius: 30px;
     width: 50vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: none;
   }
   body > section.wanna-talk > div.all-input > form > div.input{
     padding: 1.5vh;
@@ -238,6 +236,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
     padding: 1vh;
     width: 40vw;
     outline: none;
+    box-shadow: none;
   }
   body > section.wanna-talk > div.all-input > form > div.input > input#text{
     border-radius: 10px;
@@ -246,6 +245,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
     width: 35vw;
     padding: 0 5vw;
     height: 20vh;
+    box-shadow: none;
   }
   body > section.wanna-talk > div.all-input > form > div.send{
     padding-top: 3vh;
@@ -253,16 +253,16 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
   body > section.wanna-talk > div.all-input > form > div.send > button{
     border: none;
     border-radius: 30px;
-    background-color: #063855;
-    color: #ffffff;
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
     box-shadow: 0px 0px 30px #000000;
     font-size: 15px;
     padding: 1.5vh 6vw;
   }
   body > section.wanna-talk > div.all-input > form > div.send > button:hover{
-    background-color: #46bbff;
-    color: #00273d;
-    box-shadow: 0px 0px 30px #2e2e2e;
+    background-color: var(--dark-blue);
+    color: var(--light-blue);
+    text-shadow: 0px 0px 5px var(--light-blue);
   }
   
   
