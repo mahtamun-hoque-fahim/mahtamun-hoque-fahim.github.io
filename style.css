@@ -168,17 +168,18 @@ body > section.wanna-talk > div.all-input > form > div.send{
 body > section.wanna-talk > div.all-input > form > div.send > button{
   border: none;
   border-radius: 30px;
-  background-color: var(--light-blue);
-  color: var(--dark-blue);
-  box-shadow:  0px 0px 30px #000000;
-  transition: .3s;
   font-size: 15px;
-  padding: 2.5vh 8vw;
+  padding: 2.5vh 0;
+  width: 20vw;
+  color: var(--light-blue);
+  background-color: #140336;
+  box-shadow: inset  -1 -1 0 var(--light-blue);
+  transition: ease-out 0.3s;
+  text-shadow: 0px 0px 10px var(--light-blue);
 }
 body > section.wanna-talk > div.all-input > form > div.send > button:hover{
-  background-color: var(--dark-blue);
-  color: var(--light-blue);
-  text-shadow: 0px 0px 5px var(--light-blue);
+  box-shadow: inset 20vw 0 0 0 var(--light-blue);
+  color: var(--dark-blue);
 }
 
 @media only screen and (max-width: 600px) {
@@ -253,16 +254,19 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
   body > section.wanna-talk > div.all-input > form > div.send > button{
     border: none;
     border-radius: 30px;
-    background-color: var(--light-blue);
-    color: var(--dark-blue);
     box-shadow: 0px 0px 30px #000000;
     font-size: 15px;
-    padding: 1.5vh 6vw;
+    padding: 1.5vh 0;
+    width: 30vw;
+    color: var(--dark-blue);
+    background-color:var(--light-blue);
+    box-shadow: inset 0 0 0 var(--dark-blue);
+    transition: ease-out 0.3s;
+    text-shadow: 0px 0px 10px var(--light-blue);
   }
   body > section.wanna-talk > div.all-input > form > div.send > button:hover{
-    background-color: var(--dark-blue);
+    box-shadow: inset 30vw 0 0 0 var(--dark-blue);
     color: var(--light-blue);
-    text-shadow: 0px 0px 5px var(--light-blue);
   }
   
   
