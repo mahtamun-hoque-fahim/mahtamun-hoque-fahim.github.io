@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
-/*
-              delta-bright blue #43e8ed
-                    dark blue ##5e17eb
-*/
 :root{
   --light-blue :#43e8ed;
   --dark-blue : #0b0021;
@@ -152,19 +148,20 @@ body > section.wanna-talk > div.all-input > form > div.input{
 }
 body > section.wanna-talk > div.all-input > form > div.input > input#name , input#mail{
   border: 0;
-  border-radius: 30px;
-  padding: 1vh 5vw;
+  border-radius: 50px;
   outline: none;
   box-shadow: 0px 0px 30px #222222;
+  width: 20vw;
+  padding: 1.5vh 2.5vw;
 }
-body > section.wanna-talk > div.all-input > form > div.input > input#text{
-  border-radius: 10px;
+body > section.wanna-talk > div.all-input > form > div.input > textarea#text{
+  border-radius: 20px;
   border: none;
   outline: none;
   width: 20vw;
-  padding: 0 5vw;
   height: 20vh;
   box-shadow: 0px 0px 30px #1a1a1a;
+  padding: 2vh 3vw;
 }
 body > section.wanna-talk > div.all-input > form > div.send{
   padding-top: 3vh;
@@ -182,7 +179,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button{
   text-shadow: 0px 0px 10px var(--light-blue);
 }
 body > section.wanna-talk > div.all-input > form > div.send > button:hover{
-  box-shadow: inset 20vw 0 0 0 var(--light-blue);
+  box-shadow: inset 10vw 0 0 0 var(--light-blue);
   color: var(--dark-blue);
 }
 
@@ -193,6 +190,10 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
 body > section.social {
   background-color: var(--dark-blue);
   padding: 10vh 20vw;
+}
+body > section.social > p{
+  text-align: center;
+  color: #ffffff;
 }
 body > section.social > h2{
   padding-bottom: 3vh;
@@ -301,20 +302,20 @@ body > section.social > div.mail > a > button{
   }
   body > section.wanna-talk > div.all-input > form > div.input > input#name , input#mail{
     border: 0;
-    border-radius: 30px;
-    padding: 1vh;
-    width: 40vw;
+    border-radius: 20px;
+    padding: 1.5vh 3vw;
+    width: 28vw;
     outline: none;
     box-shadow: none;
   }
-  body > section.wanna-talk > div.all-input > form > div.input > input#text{
+  body > section.wanna-talk > div.all-input > form > div.input > textarea#text{
     border-radius: 10px;
     border: none;
     outline: none;
-    width: 35vw;
-    padding: 0 5vw;
+    width: 30vw;
     height: 20vh;
-    box-shadow: none;
+    box-shadow: 0px 0px 30px #1a1a1a;
+    padding: 2vh 3vw;
   }
   body > section.wanna-talk > div.all-input > form > div.send{
     padding-top: 3vh;
@@ -340,7 +341,8 @@ body > section.social > div.mail > a > button{
   /* social icons section ==========================================*/
 
   body > section.social > h2{
-   font-size: 18px;
+   font-size: 20px;
+   font-weight: 1000;
   }
   body > section.social > hr {
     margin: 0 5vw;
@@ -352,17 +354,6 @@ body > section.social > div.mail > a > button{
   }
   body > section.social > div.mail{
     padding-bottom:10vh;
-  }
-  body > section.social > div.mail > fieldset >legend{
-    display: none;
-  }
-  body > section.social > div.mail > fieldset {
-    border-radius: 5px;
-    border: .5px solid var(--light-blue);
-  }
-  body > section.social > div.mail > fieldset:hover{
-    background: linear-gradient(285.12deg, #136ab9 8.76%, #00deff 133.39%);
-    border: none;
   }
   body > section.social > div.mail > fieldset > a > div.mail-text:hover{
     font-size: 20px;
