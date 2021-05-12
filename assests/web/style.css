@@ -15,12 +15,16 @@
   padding: 0;
   font-family: 'Poppins' , 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
+  outline: none;
 }
 body{
   background-color: var(--dark-blue);
   color: #ffffff;
 }
-/* -------------------home section --------------------*/
+a{
+  text-decoration: none;
+}
+/* ===========================home section ==========================================-*/
 
 
 body > section.home{
@@ -51,7 +55,7 @@ body > section.home > div.home-texts > h3#i-am{
 }
 
 
-/*  -----------------about me section ------------------------*/
+/* =========================about me section ==========================================-*/
 
 
 
@@ -82,7 +86,7 @@ body > section.about-me > div.space{
 
 
 
-/* --------------------------my love(s) section ----------------*/
+/* -============================= my love(s) section ==========================================*/
 
 
 body > section.i-can-use {
@@ -117,7 +121,7 @@ body > section.i-can-use > div.icons > div.icon:hover{
 
 
 
-/* ---------------------contact section ------------------------------*/
+/* -============================= contact section -========================================== */
 
 
 body > section.wanna-talk {
@@ -182,6 +186,70 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
   color: var(--dark-blue);
 }
 
+
+/* =====================social icons section =================== */
+
+
+body > section.social {
+  background-color: var(--dark-blue);
+  padding: 10vh 20vw;
+}
+body > section.social > h2{
+  padding-bottom: 3vh;
+  text-align: center;
+  color: #ffffff;
+}
+body > section.social > hr {
+  margin: 0 20vw;
+  color: #ffffff;
+}
+body > section.social > div.icons{
+  display: flex;
+  padding: 5vh 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: linear-gradient(285.12deg, #136ab9 8.76%, #00deff 133.39%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s ease-out;
+  font-family: 'Poppins';
+}
+body > section.social > div.icons:hover{
+  background: var(--light-blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body > section.social > div.icons > a > div.icon{
+  padding: 0 2vw;
+  font-size: 30px;
+}
+body > section.social > div.mail{
+  padding-bottom:10vh;
+  text-align: center;
+}
+body > section.social > div.mail > a > button{
+  background: linear-gradient(285.12deg, #136ab9 8.76%, #00deff 133.39%);
+  border: none;
+  border-radius: 10px;
+  color: var(--dark-blue);
+  font-weight: bolder;
+  padding: 2.5vh 10vw;
+  cursor: pointer;
+}
+
+
+
+
+
+/*  
+                          =======================
+                          ===  media query!   ===
+                          =======================
+*/
+
 @media only screen and (max-width: 600px) {
 
   body > section.home > div.home-texts{
@@ -196,7 +264,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
     font-size: 20px;
   }
 
-  /* about me section --------------------------------*/
+  /* about me section ===============================================*/
 
   body > section.about-me {
     padding: 5vh 10vw;
@@ -206,7 +274,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
     color: var(--light-blue);
   }
 
-  /* my love(s) section---------------------------------- */
+  /* my love(s) section =========================================== */
 
 
   body > section.i-can-use > hr {
@@ -214,7 +282,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
     color: white;
   }
 
-  /* contact section--------------------------------------- */
+  /* contact section ========================================== */
   
   body > section.wanna-talk > hr {
     margin: 0 10vw;
@@ -268,7 +336,43 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
     box-shadow: inset 30vw 0 0 0 var(--dark-blue);
     color: var(--light-blue);
   }
+
+  /* social icons section ==========================================*/
+
+  body > section.social > h2{
+   font-size: 18px;
+  }
+  body > section.social > hr {
+    margin: 0 5vw;
+    color: #ffffff;
+  }
+  body > section.social > div.icons > a > div.icon{
+    padding: 0 2vw;
+    font-size: 28px;
+  }
+  body > section.social > div.mail{
+    padding-bottom:10vh;
+  }
+  body > section.social > div.mail > fieldset >legend{
+    display: none;
+  }
+  body > section.social > div.mail > fieldset {
+    border-radius: 5px;
+    border: .5px solid var(--light-blue);
+  }
+  body > section.social > div.mail > fieldset:hover{
+    background: linear-gradient(285.12deg, #136ab9 8.76%, #00deff 133.39%);
+    border: none;
+  }
+  body > section.social > div.mail > fieldset > a > div.mail-text:hover{
+    font-size: 20px;
+    color: var(--dark-blue);
   
+  }
+  body > section.social > div.mail > a > button{
+    padding: 2.5vh 15vw;
+    border-radius: 10px;
+  }
   
 
 
