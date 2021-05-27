@@ -179,7 +179,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button{
   text-shadow: 0px 0px 10px var(--light-blue);
 }
 body > section.wanna-talk > div.all-input > form > div.send > button:hover{
-  box-shadow: inset 10vw 0 0 0 var(--light-blue);
+  box-shadow: inset 20vw 0 0 0 var(--light-blue);
   color: var(--dark-blue);
 }
 
