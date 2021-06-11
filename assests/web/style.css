@@ -12,11 +12,21 @@
   font-family: 'Poppins' , 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
   outline: none;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+/* Hide scrollbar for IE, Edge and Firefox */
 body{
   background-color: var(--dark-blue);
   color: #ffffff;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
 a{
   text-decoration: none;
 }
