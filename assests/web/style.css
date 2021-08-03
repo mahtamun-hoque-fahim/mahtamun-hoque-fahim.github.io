@@ -9,9 +9,10 @@
 *{
   margin: 0;
   padding: 0;
+  outline: 0;
+  transition: .5s ease-out;
   font-family: 'Poppins' , 'Segoe UI', sans-serif;
   scroll-behavior: smooth;
-  outline: none;
 }
 body{
   background-color: var(--dark-blue);
@@ -25,30 +26,19 @@ a{
 
 
 body > section.home{
-  background-color: #000000;
-  transition: 1s;
-  box-shadow: inset 100vw 0vh 0px var(--dark-blue);
+  background-color: var(--dark-blue);
 }
 body > section.home > div.home-texts{
   padding: 40vh;
-  padding-left: 4vw;
+  padding-left: 6vw;
   padding-right: 0;
 }
 body > section.home > div.home-texts > h1{
   font-size: 100px;
-  transition: 1.5s;
-  box-shadow: inset 100vw 0px 0px var(--dark-blue);
-}
-body > section.home > div.home-texts > h3{
-  background-color: var(--light-blue);
-  transition:.5s;
-  box-shadow: inset 100vw 0px 0px var(--dark-blue);
 }
 
 body > section.home > div.home-texts > h3#i-am{
   font-size: 30px;
-  transition: 1.5s;
-  box-shadow: inset 100vw 0px 0px var(--dark-blue);
 }
 
 
@@ -59,10 +49,11 @@ body > section.home > div.home-texts > h3#i-am{
 body > section.about-me {
   text-align: center;
   padding: 10vh 20vw;
-  transition: 3.5s;
-  box-shadow: inset 0vw 100vh 0px var(--light-blue);
   background-color: var(--light-blue);
   color: var(--dark-blue);
+}
+body > section.about-me > p:nth-child(1){
+  font-size: 15px;
 }
 body > section.about-me > h2{
   padding-bottom: 3vh;
@@ -83,15 +74,13 @@ body > section.about-me > div.space{
 
 
 
-/* -============================= my love(s) section ==========================================*/
+/* -============================= technologies section ==========================================*/
 
 
 body > section.i-can-use {
   text-align: center;
   padding: 10vh 20vw;
-  transition: 3.5s;
   background-color: var(--dark-blue);
-
 }
 body > section.i-can-use > h2{
   padding-bottom: 3vh;
@@ -125,6 +114,9 @@ body > section.wanna-talk {
   background-color: var(--light-blue);
   padding: 10vh 20vw;
   text-align: center;
+}
+body > section.wanna-talk > p:nth-child(1){
+  color: var(--dark-blue);
 }
 body > section.wanna-talk > h2{
   padding-bottom: 3vh;
@@ -190,7 +182,7 @@ body > section.wanna-talk > div.all-input > form > div.send > button:hover{
 
 body > section.social {
   background-color: var(--dark-blue);
-  padding: 10vh 20vw;
+  padding: 10vh ;
 }
 body > section.social > p{
   text-align: center;
@@ -215,7 +207,6 @@ body > section.social > div.icons{
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 1s ease-out;
   font-family: 'Poppins';
 }
 body > section.social > div.icons:hover{
@@ -240,17 +231,29 @@ body > section.social > div.mail > a > button{
   font-weight: bolder;
   padding: 2.5vh 10vw;
   cursor: pointer;
+  transition: 1s ease-in;
 }
 
 
 
 
 
-/*  
-                          =======================
-                          ===  media query!   ===
-                          =======================
+
+
+/*           ============================================================
+             ============================================================
+             ========================                 ===================
+             ========================  media query!   ===================
+             ========================                 ===================
+             ============================================================
+             ============================================================
 */
+
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -271,12 +274,13 @@ body > section.social > div.mail > a > button{
   body > section.about-me {
     padding: 5vh 10vw;
   }
+
   body > section.about-me > hr {
     margin: 0 25vw;
     color: var(--light-blue);
   }
 
-  /* my love(s) section =========================================== */
+  /* technologies section =========================================== */
 
 
   body > section.i-can-use > hr {
@@ -285,6 +289,7 @@ body > section.social > div.mail > a > button{
   }
 
   /* contact section ========================================== */
+
   
   body > section.wanna-talk > hr {
     margin: 0 10vw;
@@ -330,8 +335,6 @@ body > section.social > div.mail > a > button{
     width: 30vw;
     color: var(--dark-blue);
     background-color:var(--light-blue);
-    box-shadow: inset 0 0 0 var(--dark-blue);
-    transition: ease-out 0.3s;
     text-shadow: 0px 0px 10px var(--light-blue);
   }
   body > section.wanna-talk > div.all-input > form > div.send > button:hover{
