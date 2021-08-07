@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
 
 :root{
   --light-blue :#43e8ed;
@@ -17,6 +17,7 @@
 body{
   background-color: var(--dark-blue);
   color: #ffffff;
+  font-weight: 200;
 }
 
 a{
@@ -233,142 +234,25 @@ body > section.social > div.mail > a > button{
   cursor: pointer;
   transition: 1s ease-in;
 }
+body > section.social > div.mail > a > button:hover{
+  transition: 1s ease-in;
+}
 
 
+/* ===================== built by section =================== */
 
-
-
-
-
-/*           ============================================================
-             ============================================================
-             ========================                 ===================
-             ========================  media query!   ===================
-             ========================                 ===================
-             ============================================================
-             ============================================================
-*/
-
-
-
-
-
-
-
-@media only screen and (max-width: 600px) {
-
-  body > section.home > div.home-texts{
-    padding: 25vh;
-    padding-left: 10vw;
-    padding-right: 0;
-  }
-  body > section.home > div.home-texts > h1{
-    font-size: 55px;
-  }
-  body > section.home > div.home-texts > h3#i-am{
-    font-size: 20px;
-  }
-
-  /* about me section ===============================================*/
-
-  body > section.about-me {
-    padding: 5vh 10vw;
-  }
-
-  body > section.about-me > hr {
-    margin: 0 25vw;
-    color: var(--light-blue);
-  }
-
-  /* technologies section =========================================== */
-
-
-  body > section.i-can-use > hr {
-    margin: 0 2vw;
-    color: white;
-  }
-
-  /* contact section ========================================== */
-
-  
-  body > section.wanna-talk > hr {
-    margin: 0 10vw;
-    color: var(--light-blue);
-  }
-  body > section.wanna-talk > div.all-input{
-    border-radius: 30px;
-    width: 50vw;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: none;
-  }
-  body > section.wanna-talk > div.all-input > form > div.input{
-    padding: 1.5vh;
-  }
-  body > section.wanna-talk > div.all-input > form > div.input > input#name , input#mail{
-    border: 0;
-    border-radius: 20px;
-    padding: 1.5vh 3vw;
-    width: 28vw;
-    outline: none;
-    box-shadow: none;
-  }
-  body > section.wanna-talk > div.all-input > form > div.input > textarea#text{
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    width: 30vw;
-    height: 20vh;
-    box-shadow: 0px 0px 30px #1a1a1a;
-    padding: 2vh 3vw;
-  }
-  body > section.wanna-talk > div.all-input > form > div.send{
-    padding-top: 3vh;
-  }
-  body > section.wanna-talk > div.all-input > form > div.send > button{
-    border: none;
-    border-radius: 30px;
-    box-shadow: 0px 0px 30px #000000;
-    font-size: 15px;
-    padding: 1.5vh 0;
-    width: 30vw;
-    color: var(--dark-blue);
-    background-color:var(--light-blue);
-    text-shadow: 0px 0px 10px var(--light-blue);
-  }
-  body > section.wanna-talk > div.all-input > form > div.send > button:hover{
-    box-shadow: inset 30vw 0 0 0 var(--dark-blue);
-    color: var(--light-blue);
-  }
-
-  /* social icons section ==========================================*/
-
-  body > section.social > h2{
-   font-size: 20px;
-   font-weight: 1000;
-  }
-  body > section.social > hr {
-    margin: 0 5vw;
-    color: #ffffff;
-  }
-  body > section.social > div.icons > a > div.icon{
-    padding: 0 2vw;
-    font-size: 28px;
-  }
-  body > section.social > div.mail{
-    padding-bottom:10vh;
-  }
-  body > section.social > div.mail > fieldset > a > div.mail-text:hover{
-    font-size: 20px;
-    color: var(--dark-blue);
-  
-  }
-  body > section.social > div.mail > a > button{
-    padding: 2.5vh 15vw;
-    border-radius: 10px;
-  }
-  
-
-
+body > section.built-by {
+  background-color: var(--light-blue);
+  height: 20vh;
+  color: var(--dark-blue);
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+body > section.built-by > div:nth-child(1){
+  padding: 2.5vh;
+}
+body > section.built-by > div:nth-child(1) > a{
+  font-weight: 300;
+  color: #000000;
 }
