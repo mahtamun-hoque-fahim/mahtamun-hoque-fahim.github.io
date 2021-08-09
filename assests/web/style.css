@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@200;300&display=swap');
+
+
 
 :root{
   --light-blue :#43e8ed;
@@ -56,22 +59,29 @@ body > section.about-me {
 body > section.about-me > p:nth-child(1){
   font-size: 15px;
 }
-body > section.about-me > h2{
+body > section.about-me > div.all-text > h2{
   padding-bottom: 3vh;
 }
-body > section.about-me > p {
+body > section.about-me > div.all-text > p {
   font-size: 20px;
 }
 body > section.about-me > hr {
   margin: 0 20vw;
   color: var(--light-blue);
 }
-body > section.about-me > div.empty {
+body > section.about-me > div.all-text > div.empty {
   height: 5vh;
 }
-body > section.about-me > div.space{
+body > section.about-me > div.all-text > div.space{
   height: 5vh;
 }
+
+body > section.about-me > div.all-text{
+  text-align: justify;
+  padding: 2.5vh 0 0 0;
+}
+
+
 
 
 
@@ -106,76 +116,97 @@ body > section.i-can-use > div.icons > div.icon:hover{
   box-shadow: 0px 0px 50px var(--light-blue);
 }
 
+/* ===================    Projects section    ====================== */
 
 
-/* -============================= contact section -========================================== */
-
-
-body > section.wanna-talk {
+body > section.projects {
   background-color: var(--light-blue);
+  color: var(--dark-blue);
+  text-align: center;
   padding: 10vh 20vw;
-  text-align: center;
 }
-body > section.wanna-talk > p:nth-child(1){
-  color: var(--dark-blue);
-}
-body > section.wanna-talk > h2{
-  padding-bottom: 3vh;
-  text-align: center;
-  color: var(--dark-blue);
-}
-body > section.wanna-talk > hr {
-  margin: 0 20vw;
-  color: var(--light-blue);
-}
-body > section.wanna-talk > div.empty {
-  height: 5vh;
-}
-body > section.wanna-talk > div.all-input{
-  background-color: var(--dark-blue);
-  border-radius: 30px;
-  padding: 5vh 5vw;
-  box-shadow: 0px 0px 30px #000000;
-}
-body > section.wanna-talk > div.all-input > form > div.input{
-  padding: 1.5vh;
-}
-body > section.wanna-talk > div.all-input > form > div.input > input#name , input#mail{
-  border: 0;
-  border-radius: 50px;
-  outline: none;
-  box-shadow: 0px 0px 30px #222222;
-  width: 20vw;
-  padding: 1.5vh 2.5vw;
-}
-body > section.wanna-talk > div.all-input > form > div.input > textarea#text{
-  border-radius: 20px;
-  border: none;
-  outline: none;
-  width: 20vw;
-  height: 20vh;
-  box-shadow: 0px 0px 30px #1a1a1a;
-  padding: 2vh 3vw;
-}
-body > section.wanna-talk > div.all-input > form > div.send{
-  padding-top: 3vh;
-}
-body > section.wanna-talk > div.all-input > form > div.send > button{
-  border: none;
-  border-radius: 30px;
+
+body > section.projects > p:nth-child(1){
   font-size: 15px;
-  padding: 2.5vh 0;
-  width: 20vw;
-  color: var(--light-blue);
-  background-color: #140336;
-  box-shadow: inset  -1 -1 0 var(--light-blue);
-  transition: ease-out 0.3s;
-  text-shadow: 0px 0px 10px var(--light-blue);
 }
-body > section.wanna-talk > div.all-input > form > div.send > button:hover{
-  box-shadow: inset 20vw 0 0 0 var(--light-blue);
+body > section.projects > h2{
+  padding-bottom: 3vh;
+}
+body > section.projects > hr {
+  margin: 0 20vw;
+  color:var(--dark-blue);
+}
+
+
+body > section.projects > div{
+  margin: auto auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 5vh 0;
+  grid-gap: 20vh;
+}
+body > section.projects > div > div{
+  display: grid;
+  grid-template-rows:1fr 1fr;
+  background-color: #00a5be;
+  padding-bottom: 10vh;
+  
+
+}
+body > section.projects > div > div > div:nth-child(1){
+  background-size: cover;
+  /* padding-top: 40vh; */
+}
+body > section.projects > div > div > div:nth-child(2){
+  text-align: center;
+  margin:auto auto;
   color: var(--dark-blue);
+  padding: 5vh 0 0 0;
 }
+
+
+body > section.projects > div > div:nth-child(1) > div:nth-child(1){
+background-image: url(/assests/media/project-Messenger_clone.png);
+background-position:top;
+}
+body > section.projects > div > div:nth-child(2) > div:nth-child(1){
+background-image: url(/assests/media/project-Todo-app.png);
+background-position:center;
+}
+body > section.projects > div > div:nth-child(3) > div:nth-child(1){
+background-image: url(/assests/media/project-multipurpose-blog.png);
+background-position:top;
+}
+body > section.projects > div > div:nth-child(4) > div:nth-child(1){
+background-image: url(/assests/media/project-download-page.png);
+background-position:center;
+}
+body > section.projects > div > div:nth-child(5) > div:nth-child(1){
+background-image: url(/assests/media/project-Portfolio.png);
+background-position:top;
+}
+
+body > section.projects > div > div > div:nth-child(2) > h1::before{
+  content: "▹ Featured Project : ";
+  font-family: Lobster Two;
+ 
+}
+body > section.projects > div > div > div:nth-child(2) > div{
+  padding: 5vh 0 0 0;
+}
+body > section.projects > div > div > div:nth-child(2) > div > a{
+  background-color:var(--dark-blue) ;
+  color: var(--light-blue);
+  padding: 2vh 3vw;
+  border-radius: 30px;
+
+}
+body > section.projects > div > div > div:nth-child(2) > div > a:nth-child(1){
+  font-weight: 300;
+}
+
+
+
 
 
 /* =====================social icons section =================== */
@@ -253,6 +284,7 @@ body > section.built-by > div:nth-child(1){
   padding: 2.5vh;
 }
 body > section.built-by > div:nth-child(1) > a{
-  font-weight: 300;
+  font-family:Lobster Two;
+  font-size: 20px;
   color: #000000;
 }
