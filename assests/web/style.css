@@ -125,6 +125,9 @@ body > section.projects {
   text-align: center;
   padding: 10vh 20vw;
 }
+body > section.projects:hover{
+  background-color: #eee;
+}
 
 body > section.projects > p:nth-child(1){
   font-size: 15px;
@@ -145,14 +148,19 @@ body > section.projects > div{
   padding: 5vh 0;
   grid-gap: 20vh;
 }
+
 body > section.projects > div > div{
   display: grid;
-  grid-template-rows:1fr 1fr;
-  background-color: #00a5be;
+  grid-template-rows:3fr 1fr;
+  background-color: #ffffff;
   padding-bottom: 10vh;
-  
-
+  border-radius: 10px;
 }
+
+body > section.projects > div > div:hover{
+  grid-template-rows:0fr 1fr;
+}
+
 body > section.projects > div > div > div:nth-child(1){
   background-size: cover;
   /* padding-top: 40vh; */
@@ -172,6 +180,9 @@ background-position:top;
 body > section.projects > div > div:nth-child(2) > div:nth-child(1){
 background-image: url(/assests/media/project-Todo-app.png);
 background-position:center;
+border-top: .5px solid #ffffff;
+border-left: .5px solid #ffffff;
+border-right: .5px solid #ffffff;
 }
 body > section.projects > div > div:nth-child(3) > div:nth-child(1){
 background-image: url(/assests/media/project-multipurpose-blog.png);
@@ -199,6 +210,7 @@ body > section.projects > div > div > div:nth-child(2) > div > a{
   color: var(--light-blue);
   padding: 2vh 3vw;
   border-radius: 30px;
+  filter: drop-shadow(0px 30px 2rem #ddd);
 
 }
 body > section.projects > div > div > div:nth-child(2) > div > a:nth-child(1){
