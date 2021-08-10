@@ -1,4 +1,4 @@
-<img src="https://mahtamun-hoque-fahim.github.io/assests/media/favicon.png" height="100px" width="100px">
+<img src="https://mahtamun-hoque-fahim.github.io/assets/media/favicon.png" height="100px" width="100px">
 
 # My Portfolio 
 
