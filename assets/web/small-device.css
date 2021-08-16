@@ -7,7 +7,11 @@
 @media only screen and (max-width: 600px) {
 
   body > section.home{
-    background-image: url(/assets/media/); 
+    background-image: url(/assets/media/liquid-portrait.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 background: linear-gradient(125deg, rgba(5,92,176,1) 0%, rgba(0,212,255,1) 100%);
     color: #222222;
     }
