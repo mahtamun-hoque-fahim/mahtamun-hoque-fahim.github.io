@@ -12,8 +12,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-background: linear-gradient(125deg, rgba(5,92,176,1) 0%, rgba(0,212,255,1) 100%);
-    color: #222222;
+background-color:#222;
+   color:#000;
     }
   
   body > section.home:hover{
@@ -22,8 +22,6 @@ background: linear-gradient(125deg, rgba(5,92,176,1) 0%, rgba(0,212,255,1) 100%)
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-background: linear-gradient(125deg, rgba(5,92,176,1) 0%, rgba(0,212,255,1) 100%);
-    color: #222222;
     }
   body > section.home{
     background-color: #ffffff;
