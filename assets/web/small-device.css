@@ -7,8 +7,8 @@
 @media only screen and (max-width: 600px) {
 
   body > section.home{
-    background-image: url(/assets/media/);
-    background-color:#dddddd;
+    background-image: url(/assets/media/); 
+background: linear-gradient(125deg, rgba(5,92,176,1) 0%, rgba(0,212,255,1) 100%);
     color: #222222;
     }
   body > section.home{
@@ -28,7 +28,12 @@
 
   /* about me section ===============================================*/
  body > section.about-me{
+   background-color:#333;
    color: #eeeeee;
+ }
+   body > section.about-me:hover{
+   color: #eeeeee;
+     background-color:#333;
  }
   body > section.about-me {
     padding: 5vh 10vw;
