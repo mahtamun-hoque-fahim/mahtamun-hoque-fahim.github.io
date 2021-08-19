@@ -166,6 +166,7 @@ body > section.projects > div > div{
   background-color: #ffffff;
   padding-bottom: 10vh;
   border-radius: 10px;
+  transition:1s ease-in;
 }
 
 body > section.projects > div > div:hover{
