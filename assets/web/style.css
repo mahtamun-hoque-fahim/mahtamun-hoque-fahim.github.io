@@ -27,10 +27,6 @@ a:visited{
 
 body > section.home{
     background-color:#222222;
-}
-
-body > section.home:hover{
-
   background-image: url(/assets/media/liquid-portrait.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -166,16 +162,23 @@ body > section.projects > div > div{
   background-color: #ffffff;
   padding-bottom: 10vh;
   border-radius: 10px;
-  transition:1s ease-in;
 }
-
+body > section.projects > div > *{
+  transition: 1s ease;
+}
+body > section.projects:hover > div > div{
+  box-shadow: 05px 10px 2rem #aaa ;
+}
 body > section.projects > div > div:hover{
-  grid-template-rows:0fr 1fr;
+  box-shadow: 0px 5px 1rem #aaa ;
+  transform: translateY(10px);
 }
 
 body > section.projects > div > div > div:nth-child(1){
   background-size: cover;
   /* padding-top: 40vh; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 body > section.projects > div > div > div:nth-child(2){
   text-align: center;
@@ -255,7 +258,7 @@ body > section.social > h2{
   color: #ffffff;
 }
 body > section.social > hr {
-  margin: 0 20vw;
+  margin: 0 30vw;
   color: #ffffff;
 }
 body > section.social > div.icons{
