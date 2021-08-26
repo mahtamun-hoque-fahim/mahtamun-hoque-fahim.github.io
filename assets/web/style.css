@@ -27,7 +27,7 @@ a:visited{
 
 body > section.home{
     background-color:#222222;
-  background-image: url(/assets/media/liquid-portrait.jpg);
+  background-image: url(/assets/media/liquid-portrait.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -242,7 +242,7 @@ body > section.projects > div > div > div:nth-child(2) > div > a:nth-child(1){
 
 body > section.social {
   background-color: #222222;
-  background-image: url(/assets/media/liquid-portrait-1.png);
+  background-image: url(/assets/media/liquid-portrait-1.webp);
   background-repeat: no-repeat;
 background-size: cover;
   background-position:center;
