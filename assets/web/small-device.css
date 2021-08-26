@@ -7,7 +7,7 @@
 @media only screen and (max-width: 600px) {
 
   body > section.home{
-    background-image: url(/assets/media/liquid-portrait.jpg);
+    background-image: url(/assets/media/liquid-portrait.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -17,7 +17,7 @@ background-color:#222;
     }
   
   body > section.home:hover{
-    background-image: url(/assets/media/liquid-portrait.jpg);
+    background-image: url(/assets/media/liquid-portrait.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -116,7 +116,7 @@ background-blend-mode:lighten;
   /* social icons section ==========================================*/
 
   body > section.social {
-    background-image: url(/assets/media/liquid-portrait.jpg);
+    background-image: url(/assets/media/liquid-portrait.webp);
     background-position: center;
     background-size: cover;
   }
