@@ -11,8 +11,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
-background-color:#222;
+  background-attachment:unset;
+background-color:#0b0021;
    color:#fff;
     }
   
@@ -21,7 +21,6 @@ background-color:#222;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
     }
   body > section.home{
     background-color: #ffffff;
@@ -39,14 +38,11 @@ background-color:#222;
   }
 
   /* about me section ===============================================*/
+
  body > section.about-me{
-   background-color:#333;
    color: #eeeeee;
  }
-   body > section.about-me:hover{
-   color: #eeeeee;
-     background-color:#333;
- }
+
   body > section.about-me {
     padding: 5vh 10vw;
   }
@@ -83,7 +79,13 @@ body > section.i-can-use {
     width: 80vw;
     text-align: right;
   }
-
+  body > section.projects:hover > div > div{
+    box-shadow: none;
+  }
+  body > section.projects > div > div:hover{
+    box-shadow:none ;
+    transform:none;
+  }
 
 body > section.projects > div > div:nth-child(1) > div:nth-child(1){
 background-position: left;
