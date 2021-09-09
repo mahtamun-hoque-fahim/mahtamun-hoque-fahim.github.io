@@ -32,10 +32,11 @@ body > section.home{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  padding: 10vh 0;
 }
 
 body > section.home > div.home-texts{
-  padding: 40vh;
+  padding: 30vh;
   padding-left: 6vw;
   padding-right: 0;
 }
@@ -55,11 +56,12 @@ body > section.home > div.home-texts > h3#i-am{
 body > section.about-me {
   text-align: center;
   padding: 10vh 20vw;
-
-  color:#000000;
+background-color: #0b0021;
+  color:#ffffff;
 }
-body > section.about-me:hover{
-    background-color:#dddddd;
+body > section.about-me:hover {
+background-color: #eee;
+  color:#111;
 }
 body > section.about-me > p:nth-child(1){
   font-size: 15px;
@@ -72,7 +74,6 @@ body > section.about-me > div.all-text > p {
 }
 body > section.about-me > hr {
   margin: 0 20vw;
-  color: var(--light-blue);
 }
 body > section.about-me > div.all-text > div.empty {
   height: 5vh;
@@ -96,7 +97,7 @@ body > section.about-me > div.all-text{
 body > section.i-can-use {
   text-align: center;
   padding: 10vh 20vw;
-  background-color: var(--dark-blue);
+  background-color:#0b0021;
 }
 body > section.i-can-use > h2{
   padding-bottom: 3vh;
@@ -125,8 +126,7 @@ body > section.i-can-use > div.icons > div.icon:hover{
 
 
 body > section.projects {
-  background-color: var(--light-blue);
-  color: var(--dark-blue);
+  background-color:#0b0021;
   text-align: center;
   padding: 10vh 20vw;
   color: #000000;
@@ -274,9 +274,6 @@ body > section.social > div.icons > a{
 body > section.social > div.icons > a:hover{
   color: #00deff;
 }
-body > section.social > div.icons > a:visited{
-  color: #ffffff;
-}
 body > section.social > div.icons > a > div.icon{
   padding: 0 2vw;
   font-size: 30px;
@@ -303,7 +300,7 @@ body > section.social > div.mail > a > button:hover{
 /* ===================== built by section =================== */
 
 body > section.built-by {
-  background-color: #222222;
+  background-color: #0b0021;
   height: 20vh;
   color: #dddddd;
   text-align: center;
