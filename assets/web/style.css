@@ -1,32 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@200;300&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@200;300&display=swap');
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   outline: 0;
-  transition: .5s ease-out;
-  font-family: 'Poppins' , 'Segoe UI', sans-serif;
+  transition: 0.5s ease-out;
+  font-family: "Poppins", "Segoe UI", sans-serif;
   scroll-behavior: smooth;
 }
-body{
-  background-color:#222222;
-  color:#eeeeee;
+body {
+  background-color: #222222;
+  color: #eeeeee;
   font-weight: 200;
 }
 
-a{
+a {
   text-decoration: none;
 }
-a:visited{
+a:visited {
   color: #00deff;
 }
 /* ===========================home section ==========================================-*/
 
-
-body > section.home{
-    background-color:#222222;
+body > section.home {
+  background-color: #222222;
   background-image: url(/assets/media/liquid-portrait.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -35,38 +32,35 @@ body > section.home{
   padding: 10vh 0;
 }
 
-body > section.home > div.home-texts{
+body > section.home > div.home-texts {
   padding: 30vh;
   padding-left: 6vw;
   padding-right: 0;
 }
-body > section.home > div.home-texts > h1{
+body > section.home > div.home-texts > h1 {
   font-size: 100px;
 }
 
-body > section.home > div.home-texts > h3#i-am{
+body > section.home > div.home-texts > h3#i-am {
   font-size: 30px;
 }
 
-
 /* =========================about me section ==========================================-*/
-
-
 
 body > section.about-me {
   text-align: center;
   padding: 10vh 20vw;
-background-color: #0b0021;
-  color:#ffffff;
+  background-color: #0b0021;
+  color: #ffffff;
 }
 body > section.about-me:hover {
-background-color: #eee;
-  color:#111;
+  background-color: #eee;
+  color: #111;
 }
-body > section.about-me > p:nth-child(1){
+body > section.about-me > p:nth-child(1) {
   font-size: 15px;
 }
-body > section.about-me > div.all-text > h2{
+body > section.about-me > div.all-text > h2 {
   padding-bottom: 3vh;
 }
 body > section.about-me > div.all-text > p {
@@ -78,28 +72,23 @@ body > section.about-me > hr {
 body > section.about-me > div.all-text > div.empty {
   height: 5vh;
 }
-body > section.about-me > div.all-text > div.space{
+body > section.about-me > div.all-text > div.space {
   height: 5vh;
 }
 
-body > section.about-me > div.all-text{
+body > section.about-me > div.all-text {
   text-align: justify;
   padding: 2.5vh 0 0 0;
 }
 
-
-
-
-
 /* -============================= technologies section ==========================================*/
-
 
 body > section.i-can-use {
   text-align: center;
   padding: 10vh 20vw;
-  background-color:#0b0021;
+  background-color: #0b0021;
 }
-body > section.i-can-use > h2{
+body > section.i-can-use > h2 {
   padding-bottom: 3vh;
 }
 body > section.i-can-use > hr {
@@ -109,46 +98,44 @@ body > section.i-can-use > hr {
 body > section.i-can-use > div.empty {
   height: 5vh;
 }
-body > section.i-can-use > div.icons{
+body > section.i-can-use > div.icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-body > section.i-can-use > div.icons > div.icon{
+body > section.i-can-use > div.icons > div.icon {
   padding: 2vh;
   font-size: 30px;
 }
-body > section.i-can-use > div.icons > div.icon:hover{
+body > section.i-can-use > div.icons > div.icon:hover {
   border-radius: 20px;
   box-shadow: 0px 0px 50px var(--light-blue);
 }
 
 /* ===================    Projects section    ====================== */
 
-
 body > section.projects {
-  background-color:#0b0021;
+  background-color: #0b0021;
   text-align: center;
   padding: 10vh 20vw;
   color: #000000;
 }
-body > section.projects:hover{
+body > section.projects:hover {
   background-color: #eee;
   color: #000000;
 }
 
-body > section.projects > p:nth-child(1){
+body > section.projects > p:nth-child(1) {
   font-size: 15px;
 }
-body > section.projects > h2{
+body > section.projects > h2 {
   padding-bottom: 3vh;
 }
 body > section.projects > hr {
   margin: 0 20vw;
-  color:var(--dark-blue);
+  color: var(--dark-blue);
 }
 
-
-body > section.projects > div{
+body > section.projects > div {
   margin: auto auto;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -156,103 +143,95 @@ body > section.projects > div{
   grid-gap: 20vh;
 }
 
-body > section.projects > div > div{
+body > section.projects > div > div {
   display: grid;
-  grid-template-rows:3fr 1fr;
+  grid-template-rows: 3fr 1fr;
   background-color: #ffffff;
   padding-bottom: 10vh;
   border-radius: 10px;
 }
-body > section.projects > div > *{
+body > section.projects > div > * {
   transition: 1s ease;
 }
-body > section.projects:hover > div > div{
-  box-shadow: 05px 10px 2rem #aaa ;
+body > section.projects:hover > div > div {
+  box-shadow: 05px 10px 2rem #aaa;
 }
-body > section.projects > div > div:hover{
-  box-shadow: 0px 5px 1rem #aaa ;
+body > section.projects > div > div:hover {
+  box-shadow: 0px 5px 1rem #aaa;
   transform: translateY(10px);
 }
 
-body > section.projects > div > div > div:nth-child(1){
+body > section.projects > div > div > div:nth-child(1) {
   background-size: cover;
   /* padding-top: 40vh; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-body > section.projects > div > div > div:nth-child(2){
+body > section.projects > div > div > div:nth-child(2) {
   text-align: center;
-  margin:auto auto;
+  margin: auto auto;
   color: var(--dark-blue);
   padding: 5vh 0 0 0;
 }
 
+body > section.projects > div > div:nth-child(1) > div:nth-child(1) {
+  background-image: url(/assets/media/project/project-Messenger_clone.webp);
+  background-position: top;
+}
+body > section.projects > div > div:nth-child(2) > div:nth-child(1) {
+  background-image: url(/assets/media/project/project-Todo-app.webp);
+  background-position: center;
+  border-top: 0.5px solid #ffffff;
+  border-left: 0.5px solid #ffffff;
+  border-right: 0.5px solid #ffffff;
+}
+body > section.projects > div > div:nth-child(3) > div:nth-child(1) {
+  background-image: url(/assets/media/project/project-multipurpose-blog.webp);
+  background-position: top;
+}
+body > section.projects > div > div:nth-child(4) > div:nth-child(1) {
+  background-image: url(/assets/media/project/project-download-page.webp);
+  background-position: center;
+}
+body > section.projects > div > div:nth-child(5) > div:nth-child(1) {
+  background-image: url(/assets/media/project/project-Portfolio.webp);
+  background-position: top;
+}
 
-body > section.projects > div > div:nth-child(1) > div:nth-child(1){
-background-image: url(/assets/media/project/project-Messenger_clone.webp);
-background-position:top;
-}
-body > section.projects > div > div:nth-child(2) > div:nth-child(1){
-background-image: url(/assets/media/project/project-Todo-app.webp);
-background-position:center;
-border-top: .5px solid #ffffff;
-border-left: .5px solid #ffffff;
-border-right: .5px solid #ffffff;
-}
-body > section.projects > div > div:nth-child(3) > div:nth-child(1){
-background-image: url(/assets/media/project/project-multipurpose-blog.webp);
-background-position:top;
-}
-body > section.projects > div > div:nth-child(4) > div:nth-child(1){
-background-image: url(/assets/media/project/project-download-page.webp);
-background-position:center;
-}
-body > section.projects > div > div:nth-child(5) > div:nth-child(1){
-background-image: url(/assets/media/project/project-Portfolio.webp);
-background-position:top;
-}
-
-body > section.projects > div > div > div:nth-child(2) > h1::before{
+body > section.projects > div > div > div:nth-child(2) > h1::before {
   content: "▹ Featured Project : ";
   font-family: Lobster Two;
- 
 }
-body > section.projects > div > div > div:nth-child(2) > div{
+body > section.projects > div > div > div:nth-child(2) > div {
   padding: 5vh 0 0 0;
 }
-body > section.projects > div > div > div:nth-child(2) > div > a{
-  background-color:#222222 ;
-color: #ffffff;
+body > section.projects > div > div > div:nth-child(2) > div > a {
+  background-color: #222222;
+  color: #ffffff;
   padding: 2vh 3vw;
   border-radius: 30px;
   filter: drop-shadow(0px 30px 2rem #bbb);
   font-weight: 300;
-
 }
-body > section.projects > div > div > div:nth-child(2) > div > a:nth-child(1){
-    color:#00deff;
+body > section.projects > div > div > div:nth-child(2) > div > a:nth-child(1) {
+  color: #00deff;
 }
-
-
-
-
 
 /* =====================social icons section =================== */
-
 
 body > section.social {
   background-color: #222222;
   background-image: url(/assets/media/liquid-portrait-1.webp);
   background-repeat: no-repeat;
-background-size: cover;
-  background-position:center;
-  padding: 10vh ;
+  background-size: cover;
+  background-position: center;
+  padding: 10vh;
 }
-body > section.social > p{
+body > section.social > p {
   text-align: center;
   color: #ffffff;
 }
-body > section.social > h2{
+body > section.social > h2 {
   padding-bottom: 3vh;
   text-align: center;
   color: #ffffff;
@@ -261,28 +240,28 @@ body > section.social > hr {
   margin: 0 30vw;
   color: #ffffff;
 }
-body > section.social > div.icons{
+body > section.social > div.icons {
   display: flex;
   padding: 5vh 0;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-body > section.social > div.icons > a{
+body > section.social > div.icons > a {
   color: #ffffff;
 }
-body > section.social > div.icons > a:hover{
+body > section.social > div.icons > a:hover {
   color: #00deff;
 }
-body > section.social > div.icons > a > div.icon{
+body > section.social > div.icons > a > div.icon {
   padding: 0 2vw;
   font-size: 30px;
 }
-body > section.social > div.mail{
-  padding-bottom:10vh;
+body > section.social > div.mail {
+  padding-bottom: 10vh;
   text-align: center;
 }
-body > section.social > div.mail > a > button{
+body > section.social > div.mail > a > button {
   background-color: #ddd;
   border: none;
   border-radius: 10px;
@@ -292,10 +271,9 @@ body > section.social > div.mail > a > button{
   cursor: pointer;
   transition: 1s ease-in;
 }
-body > section.social > div.mail > a > button:hover{
+body > section.social > div.mail > a > button:hover {
   transition: 1s ease-in;
 }
-
 
 /* ===================== built by section =================== */
 
@@ -307,18 +285,18 @@ body > section.built-by {
   display: grid;
   place-content: center;
 }
-body > section.built-by > div:nth-child(1){
+body > section.built-by > div:nth-child(1) {
   padding: 2.5vh;
 }
-body > section.built-by > div:nth-child(1) > a{
-  font-family:Lobster Two;
+body > section.built-by > div:nth-child(1) > a {
+  font-family: Lobster Two;
   font-size: 20px;
   color: #ffffff;
 }
 body > section.built-by:hover {
   background-color: #dddddd;
-color: #222222;
+  color: #222222;
 }
-body > section.built-by:hover > div:nth-child(1) > a{
+body > section.built-by:hover > div:nth-child(1) > a {
   color: #000000;
 }
