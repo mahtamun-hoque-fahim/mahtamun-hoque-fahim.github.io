@@ -14,7 +14,7 @@ Netlify build status : [![Netlify Status](https://api.netlify.com/api/v1/badges/
      - to install git in your machine-
      - enter 
      - ```bash
-        $ sudo apt-get install git. 
+        sudo apt-get install git. 
         ```  
      - then confiqure your login credentials
   - make sure you have installed ` github cli ` in your machine
@@ -23,11 +23,11 @@ Netlify build status : [![Netlify Status](https://api.netlify.com/api/v1/badges/
   - make sure you have updated your machine after installing these:
       - to apply upgrade , run
       - ```bash
-        $ sudo apt update
+        sudo apt update
         ```
       - then 
       - ```bash
-        $ sudo apt upgrade
+        sudo apt upgrade
         ```
 > Other instructions are comming soon :sweat_smile:
     
