@@ -1,34 +1,28 @@
 @media only screen and (max-width: 600px) {
   body > section.home {
-    background-image: url(/assets/media/liquid-portrait.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: scroll;
-    background-color: #0b0021;
-    color: #fff;
-  }
-  
-  body > section.home {
-    background-color: #ffffff;
+
+    background: none;
+    background-color: #fff;
   }
   body > section.home > div.home-texts {
     padding: 25vh;
     padding-left: 10vw;
     padding-right: 0;
   }
+
   body > section.home > div.home-texts > h1 {
     font-size: 55px;
+    background: linear-gradient(125deg, #00d8ff 45%, #1064b7 10%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
+
   body > section.home > div.home-texts > h3#i-am {
     font-size: 20px;
   }
 
   /* about me section ===============================================*/
-
-  body > section.about-me {
-    color: #eeeeee;
-  }
 
   body > section.about-me {
     padding: 5vh 10vw;
@@ -42,19 +36,23 @@
   /* technologies section =========================================== */
 
   body > section.i-can-use {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     color: #000000;
   }
   body > section.i-can-use > hr {
     margin: 0 2vw;
     color: white;
   }
+  body > section.i-can-use > div.icons > div.icon {
+    color: #000000;
+  }
 
   /* projects Section =====================================*/
 
   body > section.projects {
     padding: 10vh 10vw;
-    background-color: #ddd;
+    background: none;
+    background-color: #eeeeee;
   }
 
   body > section.projects > div {
@@ -94,10 +92,54 @@
     font-size: 18px;
   }
 
+    /* previously worked with section ==========================================*/
+
+    body > section.worked{
+      background-color: #fff;
+    }
+    body > section.worked > hr{
+      margin: 0 5vw;
+    }
+    body > section.worked > div > div > img{
+      width: 20vw;
+    }
+    body > section.worked > div > div:nth-child(2)::after{
+      content:"Sulphuric Bench"
+    }
+ /* next role section ==========================================*/
+
+ body > section.next-role{
+   background: none;
+   background-color: #eeeeee;
+   color: #111111;
+ }
+ body > section.next-role > h2{
+   font-size: 25px;
+ }
+ body > section.next-role > hr{
+   margin: 0 5vw;
+ }
+ body > section.next-role > div {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  width:fit-content;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap:10px;
+}
+ body > section.next-role > div > span {
+   font-size: 15px;
+   margin: auto auto;
+   text-align: center;
+ }
+
   /* social icons section ==========================================*/
 
   body > section.social {
-    background-image: url(/assets/media/liquid-portrait.webp);
+    background:none;
+    background-color: #fff;
     background-position: center;
     background-size: cover;
   }
@@ -129,9 +171,19 @@
   /* ===================== built by section =================== */
 
   body > section.built-by {
-    font-size: 13px;
+    font-size: 14px;
+    padding: 5vh 0;
+  }
+  body > section.built-by > div:nth-child(1){
+    width: 80%;
+    margin: auto auto;
+    padding: 0 0 3vh 0;
   }
   body > section.built-by > div:nth-child(1) > a {
-    font-size: 15px;
+    font-size: 13px;
+    color: #111111;
+  }
+  body > section.built-by > div:nth-child(1) > p > a:nth-child(3){
+  color: #111111;
   }
 }
