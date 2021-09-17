@@ -20,25 +20,41 @@ a {
 a:visited {
   color: #00deff;
 }
+::selection {
+  background-color: #0658aa;
+  color: #ffffff;
+}
 /* ===========================home section ==========================================-*/
 
 body > section.home {
-  background-color: #222222;
-  background-image: url(/assets/media/liquid-portrait.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   padding: 10vh 0;
+  background-color: #fff;
+  background: linear-gradient(
+    125deg,
+    #ecfcff 0%,
+    #ecfcff 40%,
+    #b2fcff calc(40% + 1px),
+    #b2fcff 60%,
+    #5edfff calc(60% + 1px),
+    #5edfff 72%,
+    #3e64ff calc(72% + 1px),
+    #3e64ff 100%
+  );
+  background-attachment: fixed;
 }
 
 body > section.home > div.home-texts {
   padding: 30vh;
   padding-left: 6vw;
   padding-right: 0;
+  color: #111111;
 }
 body > section.home > div.home-texts > h1 {
   font-size: 100px;
+  background: linear-gradient(125deg, #00d8ff 32%, #1064b7 10%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body > section.home > div.home-texts > h3#i-am {
@@ -50,12 +66,8 @@ body > section.home > div.home-texts > h3#i-am {
 body > section.about-me {
   text-align: center;
   padding: 10vh 20vw;
-  background-color: #0b0021;
-  color: #ffffff;
-}
-body > section.about-me:hover {
-  background-color: #eee;
-  color: #111;
+  background-color: #eeeeee;
+  color: #111111;
 }
 body > section.about-me > p:nth-child(1) {
   font-size: 15px;
@@ -86,14 +98,15 @@ body > section.about-me > div.all-text {
 body > section.i-can-use {
   text-align: center;
   padding: 10vh 20vw;
-  background-color: #0b0021;
+  background-color: #fff;
+  color: #000;
 }
 body > section.i-can-use > h2 {
   padding-bottom: 3vh;
 }
 body > section.i-can-use > hr {
   margin: 0 20vw;
-  color: white;
+  color: #000;
 }
 body > section.i-can-use > div.empty {
   height: 5vh;
@@ -105,34 +118,30 @@ body > section.i-can-use > div.icons {
 body > section.i-can-use > div.icons > div.icon {
   padding: 2vh;
   font-size: 30px;
-}
-body > section.i-can-use > div.icons > div.icon:hover {
-  border-radius: 20px;
-  box-shadow: 0px 0px 50px var(--light-blue);
+  color: #1064b7;
 }
 
 /* ===================    Projects section    ====================== */
 
 body > section.projects {
-  background-color: #0b0021;
+  background: linear-gradient(110deg, #1064b7 40%, #00d8ff 10%);
+  background-attachment: fixed;
   text-align: center;
   padding: 10vh 20vw;
   color: #000000;
+  transition: 1s ease-in;
 }
-body > section.projects:hover {
-  background-color: #eee;
-  color: #000000;
-}
-
 body > section.projects > p:nth-child(1) {
   font-size: 15px;
+  color: #000000;
 }
 body > section.projects > h2 {
   padding-bottom: 3vh;
+  color: #111111;
 }
 body > section.projects > hr {
   margin: 0 20vw;
-  color: var(--dark-blue);
+  color: #000000;
 }
 
 body > section.projects > div {
@@ -154,10 +163,10 @@ body > section.projects > div > * {
   transition: 1s ease;
 }
 body > section.projects:hover > div > div {
-  box-shadow: 05px 10px 2rem #aaa;
+  box-shadow: 05px 10px 2rem #0000007a;
 }
 body > section.projects > div > div:hover {
-  box-shadow: 0px 5px 1rem #aaa;
+  box-shadow: 0px 5px 1rem #0000007a;
   transform: translateY(10px);
 }
 
@@ -210,31 +219,83 @@ body > section.projects > div > div > div:nth-child(2) > div > a {
   color: #ffffff;
   padding: 2vh 3vw;
   border-radius: 30px;
-  filter: drop-shadow(0px 30px 2rem #bbb);
+  filter: drop-shadow(0px 30px 2rem #0000007a);
   font-weight: 300;
 }
 body > section.projects > div > div > div:nth-child(2) > div > a:nth-child(1) {
   color: #00deff;
 }
 
+/* ===================== worked with section =================== */
+
+body > section.worked {
+  background-color: #eeeeee;
+  color: #111111;
+  text-align: center;
+  padding: 10vh;
+}
+body > section.worked > h2 {
+  padding-bottom: 3vh;
+}
+body > section.worked > hr {
+  margin: 0 35vw;
+}
+body > section.worked > div {
+  padding: 5vh;
+}
+body > section.worked > div > div > img {
+  width: 10vw;
+  filter: drop-shadow(0px 30px 2rem #0000007a);
+}
+
+/* ===================== next role section =================== */
+body > section.next-role {
+  background: linear-gradient(125deg, #00d8ff 32%, #1064b7 10%);
+  background-attachment: fixed;
+  text-align: center;
+  padding: 10vh;
+  color: #ffffff;
+}
+body > section.next-role > h2 {
+  padding-bottom: 3vh;
+  font-size: 31px;
+}
+
+body > section.next-role > hr {
+  color: #ffffff;
+  margin: 0 35vw;
+}
+body > section.next-role > div {
+  display: grid;
+  place-content: center;
+  width: 50vw;
+  margin: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 5vh;
+  grid-gap:10px;
+}
+body > section.next-role > div > span {
+  font-size: 30px;
+}
+body > section.next-role > div > span::before{
+  content:"▹ "
+}
+
+
 /* =====================social icons section =================== */
 
 body > section.social {
-  background-color: #222222;
-  background-image: url(/assets/media/liquid-portrait-1.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   padding: 10vh;
+  background-color: #ffffff;
+  color: #111111;
 }
 body > section.social > p {
   text-align: center;
-  color: #ffffff;
 }
 body > section.social > h2 {
   padding-bottom: 3vh;
   text-align: center;
-  color: #ffffff;
 }
 body > section.social > hr {
   margin: 0 30vw;
@@ -256,31 +317,31 @@ body > section.social > div.icons > a:hover {
 body > section.social > div.icons > a > div.icon {
   padding: 0 2vw;
   font-size: 30px;
+  color: #111111;
 }
 body > section.social > div.mail {
   padding-bottom: 10vh;
   text-align: center;
 }
 body > section.social > div.mail > a > button {
-  background-color: #ddd;
+  background: linear-gradient(110deg, #00d8ff 90%, #1064b7 10%);
   border: none;
   border-radius: 10px;
   color: #222222;
   font-weight: bolder;
   padding: 2.5vh 10vw;
   cursor: pointer;
-  transition: 1s ease-in;
-}
-body > section.social > div.mail > a > button:hover {
-  transition: 1s ease-in;
+  transition: 0.1s ease-in;
+  filter: drop-shadow(0px 30px 2rem #0000007a);
 }
 
 /* ===================== built by section =================== */
 
 body > section.built-by {
-  background-color: #0b0021;
+  background: linear-gradient(125deg, #1064b7 32%, #00d8ff 10%);
+  background-attachment: fixed;
   height: 20vh;
-  color: #dddddd;
+  color: #000000;
   text-align: center;
   display: grid;
   place-content: center;
@@ -288,15 +349,14 @@ body > section.built-by {
 body > section.built-by > div:nth-child(1) {
   padding: 2.5vh;
 }
-body > section.built-by > div:nth-child(1) > a {
+body > section.built-by > div:nth-child(1) > p > a:nth-child(1) {
+  color: #111111;
+  font-weight: bolder;
+  text-decoration: .5px #0658aa underline;
+}
+body > section.built-by > div:nth-child(1) > p > a:nth-child(3) {
   font-family: Lobster Two;
   font-size: 20px;
-  color: #ffffff;
-}
-body > section.built-by:hover {
-  background-color: #dddddd;
-  color: #222222;
-}
-body > section.built-by:hover > div:nth-child(1) > a {
-  color: #000000;
+  color: #0658aa;
+  font-weight: bolder;
 }
