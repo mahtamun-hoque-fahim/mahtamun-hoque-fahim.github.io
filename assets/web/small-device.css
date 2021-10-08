@@ -1,189 +1,215 @@
 @media only screen and (max-width: 600px) {
+  section {
+    max-width: 100vw;
+  }
+
+  /* Home section ===============================================*/
+
   body > section.home {
-
-    background: none;
-    background-color: #fff;
+    max-height: 100vh;
+    display: grid;
+    place-content: center;
   }
-  body > section.home > div.home-texts {
-    padding: 25vh;
-    padding-left: 10vw;
-    padding-right: 0;
+  body > section.home > div {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
   }
-
-  body > section.home > div.home-texts > h1 {
-    font-size: 55px;
-    background: linear-gradient(125deg, #00d8ff 45%, #1064b7 10%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  body > section.home > div > div {
+    display: none;
+    display: inline !important;
+    text-align: center;
   }
 
-  body > section.home > div.home-texts > h3#i-am {
-    font-size: 20px;
+  body > section.home > div > div:nth-child(1) {
+    margin: auto auto;
+    width: 80vw;
+    height: max-content;
+  }
+  body > section.home > div > div:nth-child(1) > img {
+    width: 50vw;
+    border: 10px solid var(--cb4);
+    margin-right: 5vw;
   }
 
+  body > section.home > div > div:nth-child(2) {
+    width: 80vw;
+    margin-top: 2.5vh;
+  }
+  body > section.home > div > div:nth-child(2) > h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  body > section.home > div > div:nth-child(2) > p {
+    text-align: justify;
+  }
+  body > section.home > div > div:nth-child(2) > span::before {
+    display: none;
+  }
+  body > section.home > div > div:nth-child(2) > span::after {
+    content: "";
+    animation: name 20s infinite 3s;
+    transition: 0.6s ease-in;
+  }
+  body > section.home > div > div:nth-child(2) > span {
+    color: var(--c10lv);
+    animation: clippy 2s infinite 3s;
+  }
+
+  /* =========================what I do section ==========================================-*/
+
+  body > section.i-do {
+    display: grid;
+    place-content: center;
+  }
+  body > section.i-do > hr {
+    width: 40vw;
+  }
+  body > section.i-do > div {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  body > section.i-do > div > article > p {
+    text-align: justify;
+    width: 90%;
+    margin: auto auto;
+  }
+  body > section.i-do > div > article > div > a > button {
+    padding: 1.5vh 5vw;
+  }
   /* about me section ===============================================*/
 
   body > section.about-me {
-    padding: 5vh 10vw;
-  }
-
-  body > section.about-me > hr {
-    margin: 0 25vw;
-    color: var(--light-blue);
+    height: max-content;
+    padding: 5vh 0;
   }
 
   /* technologies section =========================================== */
+  body > section.i-can-use > div > p:nth-child(1) {
+    font-size: 13px;
+  }
 
-  body > section.i-can-use {
-    background-color: #ffffff;
-    color: #000000;
+  body > section.i-can-use > div > hr {
+    width: 40vw;
   }
-  body > section.i-can-use > hr {
-    margin: 0 2vw;
-    color: white;
-  }
-  body > section.i-can-use > div.icons > div.icon {
-    color: #000000;
+  body > section.i-can-use > div > div.icons {
+    width: 60vw;
+    padding: 5vh 9vw;
   }
 
   /* projects Section =====================================*/
 
-  body > section.projects {
-    padding: 10vh 10vw;
-    background: none;
-    background-color: #eeeeee;
-  }
-
   body > section.projects > div {
-    grid-template-rows: 1fr 1fr 1.3fr 1fr 1fr;
+    width: 90vw;
   }
 
+  body > section.projects > div > hr {
+    width: 40vw;
+  }
   body > section.projects > div > div {
-    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  body > section.projects > div > div > div {
+    padding: 10vh 5vw;
     width: 80vw;
-    text-align: right;
   }
-  body > section.projects:hover > div > div {
-    box-shadow: none;
-  }
-  body > section.projects > div > div:hover {
-    box-shadow: none;
-    transform: none;
-  }
-
-  body > section.projects > div > div:nth-child(1) > div:nth-child(1) {
-    background-position: left;
-  }
-  body > section.projects > div > div:nth-child(2) > div:nth-child(1) {
-    border: none;
-  }
-
-  body > section.projects > div > div:nth-child(5) > div:nth-child(1) {
-    background-position: left;
-    background-blend-mode: lighten;
-  }
-  body > section.projects > div > div > div:nth-child(2) > div > a {
+  body > section.projects > div > div > div > div > a {
     font-size: 13px;
-    padding: 2vh 6vw;
   }
 
-  body > section.projects > div > div > div:nth-child(2) > h1 {
-    font-size: 18px;
+  body > section.projects > div > div > div > div > a:nth-child(1) {
+    padding: 1.5vh 4vw;
   }
 
-    /* previously worked with section ==========================================*/
+  /* previously worked with section ==========================================*/
 
-    body > section.worked{
-      background-color: #fff;
-    }
-    body > section.worked > hr{
-      margin: 0 5vw;
-    }
-    body > section.worked > div > div > img{
-      width: 20vw;
-    }
-    body > section.worked > div > div:nth-child(2)::after{
-      content:"Sulphuric Bench"
-    }
- /* next role section ==========================================*/
+  body > section.worked > div > hr {
+    width: 40vw;
+  }
+  body > section.worked > div > div > div > img {
+    width: 25vw;
+  }
 
- body > section.next-role{
-   background: none;
-   background-color: #eeeeee;
-   color: #111111;
- }
- body > section.next-role > h2{
-   font-size: 25px;
- }
- body > section.next-role > hr{
-   margin: 0 5vw;
- }
- body > section.next-role > div {
-  display: grid;
-  place-content: center;
-  text-align: center;
-  width:fit-content;
-  margin: auto;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-gap:10px;
-}
- body > section.next-role > div > span {
-   font-size: 15px;
-   margin: auto auto;
-   text-align: center;
- }
+  /* what happend section ==========================================*/
+  body > section.what-happend > hr {
+    width: 45vw;
+  }
+  body > section.what-happend > div {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2.5vw;
+    width: 90vw;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  body > section.what-happend > div > div {
+    height: 25vh;
+  }
+  body > section.what-happend > div > div > p {
+    font-size: 12px;
+  }
+  body > section.what-happend > div > div > h1 {
+    font-size: 20px;
+  }
+  body > section.what-happend > div > div > i {
+    font-size: 33px;
+  }
 
   /* social icons section ==========================================*/
-
-  body > section.social {
-    background:none;
-    background-color: #fff;
-    background-position: center;
-    background-size: cover;
-  }
-
   body > section.social > h2 {
-    font-size: 20px;
-    font-weight: 1000;
+    padding-bottom: 3vh;
+    text-align: center;
+    font-weight: 300;
   }
   body > section.social > hr {
-    margin: 0 5vw;
-    color: #ffffff;
+    width: 40vw;
+  }
+  body > section.social > div.icons {
+    display: flex;
+    padding: 5vh 0;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   body > section.social > div.icons > a > div.icon {
     padding: 0 2vw;
-    font-size: 28px;
+    font-size: 25px;
+    color: var(--c10lv);
   }
   body > section.social > div.mail {
     padding-bottom: 10vh;
-  }
-  body > section.social > div.mail > fieldset > a > div.mail-text:hover {
-    font-size: 20px;
-    color: var(--dark-blue);
+    text-align: center;
   }
   body > section.social > div.mail > a > button {
-    padding: 2.5vh 15vw;
-    border-radius: 5px;
+    background-color: var(--cb4);
+    color: var(--cw2);
+    padding: 2vh 6vw;
+    border-radius: 50px;
+    font-weight: 300;
+    font-size: 12px;
+    border: none;
+    z-index: 2;
+  }
+  body > section.social > div.mail > a:nth-child(2) {
+    background-color: var(--cb3);
+    border: 3px solid var(--c10lv);
+    color: var(--cw);
+    padding: 2vh 5vw;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 12px;
+  }
+  body > section.social > div.mail > a:nth-child(2):hover {
+    background-color: var(--c10lv);
+  }
+
+  body > section.social > div.mail > a:nth-child(2) > i {
+    transform: rotate(-90deg);
   }
 
   /* ===================== built by section =================== */
-
   body > section.built-by {
-    font-size: 14px;
-    padding: 5vh 0;
-  }
-  body > section.built-by > div:nth-child(1){
-    width: 80%;
-    margin: auto auto;
-    padding: 0 0 3vh 0;
-  }
-  body > section.built-by > div:nth-child(1) > a {
     font-size: 13px;
-    color: #111111;
-  }
-  body > section.built-by > div:nth-child(1) > p > a:nth-child(3){
-  color: #111111;
   }
 }
