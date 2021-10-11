@@ -212,4 +212,15 @@
   body > section.built-by {
     font-size: 13px;
   }
+
+  /* ===================== announcement section =================== */
+body > div.announcement{
+  width: 80vw;
+  }
+  
+  body > div.announcement >div > p{
+font-size: 13px;
+  }
+
+
 }
