@@ -30,6 +30,7 @@
 
 body{
   font-weight: 200;
+  background-color:#1b1b1b;
 }
 
 a {
@@ -548,4 +549,46 @@ body > section.built-by > div:nth-child(1) > p > a:nth-child(4) {
   color: var(--c10);
   font-weight: bolder;
   font-weight: 400;
+}
+
+
+/* ===================== announcement section =================== */
+body > div.announcement{
+text-align: center;
+overflow: hidden;
+z-index: 2;
+position:-webkit-sticky;
+position: sticky;
+bottom: 0;
+backdrop-filter: blur(5px);
+display: grid;
+place-content: center;
+width: max-content;
+margin: auto auto;
+border: .5px solid var(--cb3);
+padding: 1.5vh 4vw 1.5vh 0 ;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+body > div.announcement > div{
+  display: grid;
+  place-content: center;
+  grid-template-columns:.5fr 1fr;
+}
+body > div.announcement > div > div{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+background-color: var(--cb2);
+  display: grid;
+  place-content: center;
+  color: var(--c10);
+  margin: auto auto;
+}
+
+body > div.announcement >div > p{
+color: var(--cw1);
+place-content: left;
+margin: auto auto;
+width: fit-content;
 }
