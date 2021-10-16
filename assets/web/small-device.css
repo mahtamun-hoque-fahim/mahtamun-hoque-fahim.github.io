@@ -84,6 +84,19 @@
     height: max-content;
     padding: 5vh 0;
   }
+  body > section.about-me > hr {
+    width: 40vw;
+  }
+  body > section.about-me > div.colored-back{
+    width: 70vw;
+    padding: 05vh;
+    display: grid;
+    place-content: center;
+  }
+  body > section.about-me > div.colored-back > div > p {
+    font-size: 18px;
+    text-align: justify;
+  }
 
   /* technologies section =========================================== */
   body > section.i-can-use > div > p:nth-child(1) {
@@ -157,6 +170,9 @@
   }
 
   /* social icons section ==========================================*/
+  body > section.social{
+    height: 90vh;
+  }
   body > section.social > h2 {
     padding-bottom: 3vh;
     text-align: center;
@@ -180,11 +196,14 @@
   body > section.social > div.mail {
     padding-bottom: 10vh;
     text-align: center;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
   }
   body > section.social > div.mail > a > button {
     background-color: var(--cb4);
     color: var(--cw2);
-    padding: 2vh 6vw;
+    padding: 2vh 8vw;
     border-radius: 50px;
     font-weight: 300;
     font-size: 12px;
@@ -212,6 +231,9 @@
   body > section.built-by {
     font-size: 13px;
   }
+  body > section.built-by > div:nth-child(1) > p > a:nth-child(4) {
+    font-size: 14px;
+  }
 
   /* ===================== announcement section =================== */
 body > div.announcement{
@@ -220,6 +242,14 @@ body > div.announcement{
   
   body > div.announcement >div > p{
 font-size: 13px;
+  }
+  body > div.announcement > div > div{
+    height:47px;
+    width: 47px;
+    border: 2px solid var(--cb3);
+    border-bottom-color:var(--c10lv);
+    border-left-color:var(--c10lv);
+    border-top-color:var(--c10lv);
   }
 
 
