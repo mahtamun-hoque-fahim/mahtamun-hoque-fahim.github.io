@@ -24,11 +24,11 @@
   padding: 0;
   outline: 0;
   transition: 0.5s ease-out;
-  font-family: "Poppins", "Segoe UI", sans-serif;
   scroll-behavior: smooth;
 }
 
-body{
+body{ 
+   font-family: "Poppins", "Segoe UI", sans-serif;
   font-weight: 200;
   background-color:#1b1b1b;
 }
@@ -36,11 +36,14 @@ body{
 a {
   text-decoration: none;
   cursor: pointer;
+  font-family:Poppins,monospace;
+}
+button{
+  font-family: Poppins,monospace;
 }
 ::selection {
-  border: .5px solid yellow;
-  background-color: var(--c10);
-  color: var(--cw2);
+  background-color: var(--c10lv);
+  color: var(--cb);
 }
 section{
   min-height: 100vh;
@@ -82,7 +85,7 @@ width: 20vw;
 border: 20px solid var(--cb4);
 filter: drop-shadow(0px 10px 1em var(--cb));
 margin-right: 5vw;
-animation: loaded .5s ease-out 1;
+  animation: loaded .5s ease-out 1;
 }
 
 
@@ -529,12 +532,15 @@ body > section.built-by {
   background-color:#1b1b1b;
   background-attachment: fixed;
   min-height: 20vh;
-  color: var(--cw1);
-  font-weight: 300;
+  color: var(--cw4);
   text-align: center;
+  font-size: 14px;
   display: grid;
   place-content: center;
   border: none;
+}
+body > section.built-by > *{
+  font-family: monospace;
 }
 body > section.built-by > div:nth-child(1) {
   padding: 2.5vh;
@@ -542,13 +548,18 @@ body > section.built-by > div:nth-child(1) {
 body > section.built-by > div:nth-child(1) > p > a:nth-child(1) {
   color: var(--c10lv);
   font-weight: 400;
+  font-family: monospace;
+}
+body > section.built-by > div:nth-child(1) > p > a > i{
+  font-size: 12px;
+  color: var(--cb5);
 }
 body > section.built-by > div:nth-child(1) > p > a:nth-child(4) {
-  font-family: Lobster Two;
-  font-size: 20px;
-  color: var(--c10);
+  font-size: 16px;
+  color: var(--c10lv);
   font-weight: bolder;
   font-weight: 400;
+  font-family: monospace;
 }
 
 
