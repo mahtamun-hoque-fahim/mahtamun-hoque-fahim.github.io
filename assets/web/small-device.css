@@ -62,6 +62,9 @@
     display: grid;
     place-content: center;
   }
+  body > section.i-do > h1{
+    font-size: 20px;
+  }
   body > section.i-do > hr {
     width: 40vw;
   }
@@ -69,6 +72,9 @@
     display: grid;
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  body > section.i-do > div > article > h2{
+    font-size: 18px;
   }
   body > section.i-do > div > article > p {
     text-align: justify;
@@ -83,6 +89,9 @@
   body > section.about-me {
     height: max-content;
     padding: 5vh 0;
+  }
+  body > section.about-me > h2 {
+    font-size: 23px;
   }
   body > section.about-me > hr {
     width: 40vw;
@@ -102,7 +111,9 @@
   body > section.i-can-use > div > p:nth-child(1) {
     font-size: 13px;
   }
-
+  body > section.i-can-use > div > h2{
+    font-size: 23px;
+  }
   body > section.i-can-use > div > hr {
     width: 40vw;
   }
@@ -139,6 +150,10 @@
 
   body > section.worked > div > hr {
     width: 40vw;
+  }
+  body > section.worked > div > div{
+    height: 200px;
+    width:200px;
   }
   body > section.worked > div > div > div > img {
     width: 25vw;
@@ -229,7 +244,7 @@
 
   /* ===================== built by section =================== */
   body > section.built-by {
-    font-size: 13px;
+    font-size: 10px;
   }
   body > section.built-by > div:nth-child(1) > p > a:nth-child(4) {
     font-size: 14px;
@@ -246,10 +261,6 @@ font-size: 13px;
   body > div.announcement > div > div{
     height:47px;
     width: 47px;
-    border: 2px solid var(--cb3);
-    border-bottom-color:var(--c10lv);
-    border-left-color:var(--c10lv);
-    border-top-color:var(--c10lv);
   }
 
 

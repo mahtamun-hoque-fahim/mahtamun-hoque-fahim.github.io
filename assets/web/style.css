@@ -17,6 +17,8 @@
   --c10:#007bff;
   --c10dv:#002853;
   --c10lv:#3d9bff;
+
+  --cr:#ff3d94;
   
 }
 * {
@@ -561,6 +563,9 @@ body > section.built-by > div:nth-child(1) > p > a:nth-child(4) {
   font-weight: 400;
   font-family: monospace;
 }
+body > section.built-by > div:nth-child(1) > p > a ~ br ~i{
+  color:var(--cr);
+}
 
 
 /* ===================== announcement section =================== */
@@ -595,6 +600,10 @@ background-color: var(--cb2);
   place-content: center;
   color: var(--c10);
   margin: auto auto;
+  border: 2px solid var(--cb3);
+  border-bottom-color:var(--c10lv);
+  border-left-color:var(--c10lv);
+  border-top-color:var(--c10lv);
 }
 
 body > div.announcement >div > p{
