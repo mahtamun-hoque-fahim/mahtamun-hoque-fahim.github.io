@@ -32,7 +32,7 @@
 <p>Some people have asked me if they can use this code for their own website, and the answer to that question is usually <b>yes, with proper attribution</b>.
 
 <p>I value keeping my site and it's code open source, but as you all know, <b>plagiarism is bad</b>. It's always disheartening whenever I find that someone has copied and pasted my site without giving me a bit of credit. I spent a huge amount of effort building and designing this iteration of my website, and I am proud of it! <br> <b>So, what I need to say is not to claim all of my effort as your own</b>.</p>
-<p font-size="5px">[Even writing this kind of readme was a idea of <a href="https://brittanychiang.com/?ref=fahim.pages.dev" target="_blank">Brittany Chiang </a> ]
+<p font-size="5px">[ Writing this kind of readme was an idea of <a href="https://brittanychiang.com/?ref=fahim.pages.dev" target="_blank">Brittany Chiang </a> ] </p>
 
 <h5 align="center">And <b>yes</b>, you can always fork this repo. Please give me appropriate credit by linking back to my portfolio <a href="https://fahim.pages.dev/?ref=forkeduser-linkedback" target="_blank">fahim.pages.dev</a> in appropriate area of your website.</h5>
 <p align="center">For example: Designed and coded with huge ❤️ by <a href="https://fahim.pages.dev/?ref=anonomous" target="_blank">Fahim</a>. Design remix by <u>your name.</u> </p>
@@ -48,8 +48,6 @@
         sudo apt-get install git. 
         ```  
      - then confiqure your login credentials
-  - make sure you have installed ` github cli ` in your machine
-      - to install ` github cli ` , headover to [official Documentation](https://cli.github.com)
   - make sure you have updated your machine after installing these:
       - to apply upgrade , run
       - ```bash
