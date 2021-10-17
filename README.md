@@ -10,7 +10,7 @@
 </h1>
 <hr>
 <p align="center">
-  The fifth iteration of <a href="https://fahim.pages.dev/?ref=github-readme" target="_blank">my portfolio</a> hosted using <a href="https://www.netlify.com/?ref=fahim.pages.dev" target="_blank">Netlify</a> and <b>Cloudflare pages</b>. [ for different purpous ].
+  The sixth iteration of <a href="https://fahim.pages.dev/?ref=github-readme" target="_blank">my portfolio</a> hosted using <a href="https://www.netlify.com/?ref=fahim.pages.dev" target="_blank">Netlify</a> and <b>Cloudflare pages</b>. [ for different purpous ].
 <p align="center">
   Previous versions:
   <a href="https://github.com/mahtamun-hoque-fahim/portfolio-v5/?ref=github-readme" target="_blank">v5</a>,
