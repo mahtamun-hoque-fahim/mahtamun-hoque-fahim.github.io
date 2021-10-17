@@ -1,5 +1,5 @@
 <h6 align="center">
-  Please read before you begin anything ! (important ⚠️)
+  Please read before you begin anything ! (important ⚠️ )
 </h6>
 <hr>
 <div align="center">
