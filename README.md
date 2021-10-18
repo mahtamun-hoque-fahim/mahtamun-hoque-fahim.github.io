@@ -10,7 +10,7 @@
 </h1>
 <hr>
 <p align="center">
-  The sixth iteration of <a href="https://fahim.pages.dev/?ref=github-readme" target="_blank">my portfolio</a> hosted using <a href="https://www.netlify.com/?ref=fahim.pages.dev" target="_blank">Netlify</a> and <b>Cloudflare pages</b>. [ for different purpous ].
+  The sixth iteration of <a href="https://fahim.pages.dev/?ref=github-readme" target="_blank">my portfolio</a> hosted using <b>Cloudflare pages</b>.
 <p align="center">
   Previous versions:
   <a href="https://github.com/mahtamun-hoque-fahim/portfolio-v5/?ref=github-readme" target="_blank">v5</a>,
@@ -19,11 +19,11 @@
     <a href="https://github.com/mahtamun-hoque-fahim/portfolio-v2/?ref=github-readme" target="_blank">v2</a>,
     <a href="https://github.com/mahtamun-hoque-fahim/portfolio-v1/?ref=github-readme" target="_blank">v1</a>
 </p>
-<p align="center">
+<!-- <p align="center">
   <a href="https://app.netlify.com/sites/mahtamun/deploys" target="_blank">
     <img src="https://api.netlify.com/api/v1/badges/7d0a1b7f-3e05-4dc6-8262-fdbd9b9b7e45/deploy-status" alt="Netlify Status" />
   </a>
-</p>
+</p> -->
 
 <img src="https://raw.githubusercontent.com/mahtamun-hoque-fahim/mahtamun-hoque-fahim.github.io/main/assets/media/site-preview.png" align="center">
 
