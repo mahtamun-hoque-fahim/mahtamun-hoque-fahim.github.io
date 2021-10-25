@@ -27,6 +27,7 @@
   outline: 0;
   transition: 0.5s ease-out;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body{ 
@@ -547,24 +548,34 @@ body > section.built-by > *{
 body > section.built-by > div:nth-child(1) {
   padding: 2.5vh;
 }
-body > section.built-by > div:nth-child(1) > p > a:nth-child(1) {
+body > section.built-by > div:nth-child(1) > p:nth-child(1) > a:nth-child(1) {
   color: var(--c10lv);
   font-weight: 400;
   font-family: monospace;
 }
-body > section.built-by > div:nth-child(1) > p > a > i{
+body > section.built-by > div:nth-child(1) > p:nth-child(1) > a > i{
   font-size: 12px;
   color: var(--cb5);
 }
-body > section.built-by > div:nth-child(1) > p > a:nth-child(4) {
+body > section.built-by > div:nth-child(1) > p:nth-child(1) > a:nth-child(4) {
   font-size: 16px;
   color: var(--c10lv);
   font-weight: bolder;
   font-weight: 400;
   font-family: monospace;
 }
-body > section.built-by > div:nth-child(1) > p > a ~ br ~i{
+body > section.built-by > div:nth-child(1) > p:nth-child(1) > a ~ br ~i{
   color:var(--cr);
+}
+
+body > section.built-by > div:nth-child(1) > p:nth-child(2) > a{
+  color: var(--c10lv);
+  font-family: monospace;
+  
+}
+body > section.built-by > div:nth-child(1) > p:nth-child(2) > a > i{
+  color: var(--cb5);
+  
 }
 
 
@@ -604,8 +615,42 @@ background-color: var(--cb2);
   border-bottom-color:var(--c10lv);
   border-left-color:var(--c10lv);
   border-top-color:var(--c10lv);
+  animation: border-magic 5s 1;
 }
+@keyframes border-magic {
+  0%{  
+    border: 2px solid var(--c10dv);
+    border-bottom-color:var(--c10lv);
+    border-left-color:var(--c10dv);
+    border-top-color:var(--c10dv);
 
+  }
+  25%{
+    border: 2px solid var(--c10dv);
+    border-bottom-color:var(--c10lv);
+    border-left-color:var(--c10lv);
+    border-top-color:var(--c10dv);
+  }
+  50%{
+    border: 2px solid var(--c10dv);
+    border-bottom-color:var(--c10lv);
+    border-left-color:var(--c10lv);
+    border-top-color:var(--c10lv);
+    transform: rotate(180deg);
+  }
+  75%{
+    border: 2px solid var(--c10lv);
+    border-bottom-color:var(--c10lv);
+    border-left-color:var(--c10lv);
+    border-top-color:var(--c10lv);
+  }
+  100%{
+    border: 2px solid var(--cb3);
+    border-bottom-color:var(--c10lv);
+    border-left-color:var(--c10lv);
+    border-top-color:var(--c10lv);
+  }
+}
 body > div.announcement >div > p{
 color: var(--cw1);
 place-content: left;
