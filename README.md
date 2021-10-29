@@ -6,7 +6,7 @@
   <img alt="Logo" src="https://mahtamun-hoque-fahim.github.io/assets/media/favicon.png" width="70vw" />
 </div>
 <h1 align="center">
-  My portfolio v5
+  My portfolio v6
 </h1>
 <hr>
 <p align="center">
