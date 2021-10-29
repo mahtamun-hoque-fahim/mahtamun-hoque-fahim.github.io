@@ -34,23 +34,22 @@
   <h3 align="center">That's all I wanted to say!! Thank you! </h3>
 
 <hr>
-
-# How to contribute ?
-  - Make sure you have git installed in your machine
-     - to install git in your machine-
-     - enter 
-     - ```bash
-        sudo apt-get install git. 
-        ```  
-     - then confiqure your login credentials
-  - make sure you have updated your machine after installing these:
-      - to apply upgrade , run
-      - ```bash
-        sudo apt update
-        ```
-      - then 
-      - ```bash
-        sudo apt upgrade
-        ```
-> Other instructions are comming soon ⏳ !
+<h2> Wanna contribute?</h2>
+<p>well,It's pretty streight forward!</p>
+<ul>
+  <li>Visit my portfolio [once again]</li>
+  <li>Pick the thug! [or the bug!] </li>
+  <li>Choose the file from directory , where bug is being spotted</li>
+  <li>Make a pull request</li>
+  <li>Give me some time [cause ,I'm busy you know!]</li>
+    <ul>
+      <li>In the mean time you might wanna say <a href="mailto:mahtamunhoquefahim@pm.me?subject=Hellow Fahim !!&body=Your text here" target="_blank"
+                                                rel="noopener">hi! </a>
+      </li>
+    </ul>
+  <li>I'll accept your pull request if it eligible!</li>
+  </ul>
+  <h3>Till then, good luck !</h3>
+  <h1>Keep exploring the world</h1>
+  
     
