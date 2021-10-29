@@ -13,6 +13,8 @@
   --cw2:#dddddd;
   --cw3:#cccccc;
   --cw4:#bbbbbb;
+  --cw5:#aaaaaa;
+  --cw6:#a9a9a9;
 
   --c10:#007bff;
   --c10dv:#002853;
@@ -35,7 +37,15 @@ body{
   font-weight: 200;
   background-color:#1b1b1b;
 }
+section.home > *{
+ transform: scale(2);
+ opacity: .5;
+}
 
+.show-time section.home >* {
+  opacity:1;
+  transform: scale(1);
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -54,16 +64,6 @@ section{
   color: var(--cw2);
   border-bottom: .5px dashed var(--cb3);
 }
-@keyframes loaded {
-  from{
-    transform: translateY(100px);
-    opacity: .1;
-  }
-  to{
-    transform: translateY(-0px);
-  opacity: 1;
-  }
-}
 /* ===========================home section ==========================================-*/
 
 body > section.home {
@@ -75,7 +75,7 @@ body > section.home > div {
   margin: auto auto;
   display: grid;
   place-content: center;
-  grid-template-columns:.8fr 1fr;
+  grid-template-columns:.8fr 1fr auto;
 }
 body > section.home > div > div:nth-child(1){
   display: grid;
@@ -88,7 +88,6 @@ width: 20vw;
 border: 20px solid var(--cb4);
 filter: drop-shadow(0px 10px 1em var(--cb));
 margin-right: 5vw;
-  animation: loaded .5s ease-out 1;
 }
 
 
@@ -98,7 +97,6 @@ body > section.home > div > div:nth-child(2){
   align-items: left;
   grid-gap:0px;
   width:40vw;
-  animation: loaded .5s ease-out 1;
 }
 body > section.home > div > div:nth-child(2) > h1{
 font-size: 40px;
@@ -117,6 +115,41 @@ body > section.home > div > div:nth-child(2) >span::before {
   content: "";
   animation: name 20s infinite 3s;
   transition: 0.6s ease-in;
+}
+body > section.home > div > div:nth-child(2) > div:nth-child(4){
+  padding: 2.5vh 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1) >button{
+  display: grid;
+  place-content: center;
+  height: 7vh;
+  width: 13vw;
+  border-radius: 50px;
+  background-color: var(--cb4);
+  color: var(--cw2);
+  filter: drop-shadow(0px 30px 2rem var(--cb1));
+  font-weight: 400;
+  border: 2.7px solid var(--c10);
+  border-radius: 50px;
+  cursor: pointer;
+}
+body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1) >button:hover{
+  background-color: var(--c10);
+}
+body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(2) > button{
+  display: grid;
+  place-content: center;
+  height: 7vh;
+  width: 13vw;
+  border-radius: 50px;
+  background-color: var(--cb3);
+  color: var(--cw6);
+  font-weight: 400;
+  border: 2.5px transparent;
+  border-radius: 50px;
+  cursor: pointer;
 }
 @keyframes clippy {
   0% {
@@ -165,6 +198,7 @@ body > section.home > div > div:nth-child(2) >span::before {
     content: "Goal Keeper;
   }
 }
+
 
 /* =========================what I do section ==========================================-*/
 
@@ -619,36 +653,44 @@ background-color: var(--cb2);
 }
 @keyframes border-magic {
   0%{  
-    border: 2px solid var(--c10dv);
-    border-bottom-color:var(--c10lv);
-    border-left-color:var(--c10dv);
-    border-top-color:var(--c10dv);
+    border: 2px solid var(--cb3);
+    border-top-color:var(--cb3);
+    border-left-color:var(--cb3);
+    border-bottom-color:var(--cb3);
+
 
   }
   25%{
-    border: 2px solid var(--c10dv);
-    border-bottom-color:var(--c10lv);
-    border-left-color:var(--c10lv);
-    border-top-color:var(--c10dv);
+    border: 2px solid var(--cb3);
+    border-top-color:var(--c10lv);
+    border-left-color:var(--cb3);
+    border-bottom-color:var(--cb3);
+
+
   }
   50%{
-    border: 2px solid var(--c10dv);
-    border-bottom-color:var(--c10lv);
-    border-left-color:var(--c10lv);
+    border: 2px solid var(--cb3);
     border-top-color:var(--c10lv);
-    transform: rotate(180deg);
+    border-left-color:var(--c10lv);
+    border-bottom-color:var(--cb3);
+
+
   }
   75%{
-    border: 2px solid var(--c10lv);
-    border-bottom-color:var(--c10lv);
-    border-left-color:var(--c10lv);
+    border: 2px solid var(--cb3);
     border-top-color:var(--c10lv);
+    border-left-color:var(--c10lv);
+    border-bottom-color:var(--c10lv);
+
+
   }
   100%{
-    border: 2px solid var(--cb3);
-    border-bottom-color:var(--c10lv);
-    border-left-color:var(--c10lv);
+    border: 2px solid var(--cb5);
     border-top-color:var(--c10lv);
+    border-left-color:var(--c10lv);
+    border-bottom-color:var(--c10lv);
+
+
   }
 }
 body > div.announcement >div > p{
