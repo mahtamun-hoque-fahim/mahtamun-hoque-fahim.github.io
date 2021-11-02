@@ -47,7 +47,7 @@
                                                 rel="noopener">hi! </a>
       </li>
     </ul>
-  <li>I'll accept your pull request if it eligible!</li>
+  <li>I'll accept your pull request if it's eligible!</li>
   </ul>
   <h3>Till then, good luck !</h3>
   <h1>Keep exploring the world</h1>
