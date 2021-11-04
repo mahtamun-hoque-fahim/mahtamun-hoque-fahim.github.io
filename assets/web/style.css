@@ -134,6 +134,15 @@ body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1)
   border: 2.7px solid var(--c10);
   border-radius: 50px;
   cursor: pointer;
+  animation: flash 3s infinite;
+}
+@keyframes flash {
+  from{
+    box-shadow: 0px 0px 2rem #007bff20;
+  }
+  to{
+    box-shadow:0px 0px 1rem #007bff30;
+  }
 }
 body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1) >button:hover{
   background-color: var(--c10);
@@ -177,25 +186,25 @@ body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(2)
     content: "UI/UX designer";
   }
   40% {
-    content: "Wing Chun Enthusiast";
+    content: "Wing Chun student";
   }
   50% {
     content: "Left winger";
   }
   60% {
-    content: "Artist";
+    content: "swimming lover";
   }
   70% {
     content: "Linux Maniac";
   }
   80% {
-    content: "Wicket Keeper";
+    content: "Artist";
   }
   90% {
-    content: "Web Developer";
+    content: "NCC cadet";
   }
   100% {
-    content: "Goal Keeper;
+    content: "Wicket Keeper";
   }
 }
 
@@ -493,6 +502,10 @@ body > section.what-happend > div > div > i {
   color: var(--c10);
   font-size: 3vw;
   padding-bottom: 2.5vh;
+
+}
+body > section.what-happend > div > div:hover > i {
+  filter: drop-shadow(0px 30px 2rem var(--c10));
 }
 
 /* =====================social icons section =================== */
@@ -540,6 +553,7 @@ body > section.social > div.mail > a > button {
 font-weight: 300;
 font-size: 15px;
 border: none;
+cursor: pointer;
 z-index:2;
 }
 body > section.social > div.mail > a:nth-child(2) {
@@ -550,9 +564,12 @@ body > section.social > div.mail > a:nth-child(2) {
   border-radius: 50px;
   font-weight: bolder;
  font-size: 15px;
+ box-shadow: 0px 0px 1rem #007bff20;
+ filter: drop-shadow(0px 30px 2rem var(--cb1));
 }
 body > section.social > div.mail > a:nth-child(2):hover{
   background-color: var(--c10lv);
+  box-shadow: 0px 0px 1rem #007bff30;
 }
 
 body > section.social > div.mail > a:nth-child(2) > i{
