@@ -138,10 +138,10 @@ body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1)
 }
 @keyframes flash {
   from{
-    box-shadow: 0px 0px 2rem #007bff20;
+    box-shadow: 0px 0px 2rem #007bff10;
   }
   to{
-    box-shadow:0px 0px 1rem #007bff30;
+    box-shadow:0px 0px 2rem #007bff30;
   }
 }
 body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1) >button:hover{

@@ -6,9 +6,11 @@
   /* Home section ===============================================*/
 
   body > section.home {
-    max-height: 100vh;
+    height: 100vh;
+    max-height: max-content;
     display: grid;
     place-content: center;
+    padding-bottom: 10vh;
   }
   body > section.home > div {
     display: grid;
@@ -27,7 +29,7 @@
     height: max-content;
   }
   body > section.home > div > div:nth-child(1) > img {
-    width: 50vw;
+    width: 45vw;
     border: 10px solid var(--cb4);
     margin-right: 5vw;
   }
@@ -37,7 +39,7 @@
     margin-top: 2.5vh;
   }
   body > section.home > div > div:nth-child(2) > h1 {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
   }
   body > section.home > div > div:nth-child(2) > p {
