@@ -638,6 +638,7 @@ z-index: 2;
 position:-webkit-sticky;
 position: sticky;
 bottom: 0;
+background-color:#eeeeee20;
 backdrop-filter: blur(5px);
 display: grid;
 place-content: center;
