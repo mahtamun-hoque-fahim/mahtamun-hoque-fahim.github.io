@@ -638,8 +638,6 @@ z-index: 2;
 position:-webkit-sticky;
 position: sticky;
 bottom: 0;
-background-color:#eeeeee20;
-backdrop-filter: blur(5px);
 display: grid;
 place-content: center;
 width: max-content;
@@ -648,6 +646,16 @@ border: .5px solid var(--cb3);
 padding: 1.5vh 4vw 1.5vh 0 ;
 border-top-left-radius: 10px;
 border-top-right-radius: 10px;
+}
+@supports (backdrop-filter: blur(5px)){
+  body > div.announcement{
+     backdrop-filter: blur(5px);
+  }
+}
+@supports not (backdrop-filter: blur(5px)){
+  body > div.announcement{
+    backdrop-filter: blur(5px);
+  }
 }
 body > div.announcement > div{
   display: grid;
