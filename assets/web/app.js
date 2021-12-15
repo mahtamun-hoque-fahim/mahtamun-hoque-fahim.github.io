@@ -27,9 +27,42 @@ clickedElement.addEventListener("click", () => {
 }
 )
 
-window.onload = function() {
+window.onload = function () {
   document.documentElement.classList.add('show-time');
 };
+const primaryNav = document.querySelector(".primary-navigation");
+const navToggle = document.querySelector(".mobile-nav-toggle");
+
+navToggle.addEventListener('click', () => {
+  const visibility = primaryNav.getAttribute("data-visible");
+
+  if (visibility === "false") {
+    primaryNav.setAttribute("data-visible", true);
+    navToggle.setAttribute('aria-expanded', true);
+  } else if (visibility === "true") {
+    primaryNav.setAttribute("data-visible", false);
+    navToggle.setAttribute('aria-expanded', false);
+  };
+}
+);
+
+let builtBy = document.querySelector('.built-by');
+let codeCounter = document.querySelector('.codeCounter');
+let heart = document.querySelector('.fa-heart');
+let blue = document.querySelector('.blue');
+
+codeCounter.innerHTML = 478+698+330+47;
+builtBy.addEventListener('mouseover',()=>{
+  codeCounter.style.cssText = "text-shadow:0px 0px 2em var(--cr);";
+  heart.style.cssText = "filter:drop-shadow(0px 0px 1em var(--cr));";
+  blue.style.cssText = "filter:drop-shadow(0px 0px 1em var(--c10lv));";
+})
+builtBy.addEventListener('mouseout',()=>{
+  codeCounter.style.cssText = "text-shadow:0px 0px 0em var(--cr);filter:drop-shadow(0px 0px 0em var(--c10lv));";
+  heart.style.cssText = "filter:drop-shadow(0px 0px 0em var(--cr));";
+  blue.style.cssText = "filter:drop-shadow(0px 0px 0em var(--c10lv));";
+})
+
 
 
 /*  display: grid;
@@ -42,4 +75,5 @@ color: var(--cw6);
 font-weight: 400;
 border: 2.5px transparent;
 border-radius: 50px;
+
 cursor: pointer; */

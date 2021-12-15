@@ -1,27 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&family=Poppins:wght@300;400&display=swap");
+
 :root {
-  --cb:#000000;
-  --cb1:#111111;
-  --cb2:#222222;
-  --cb3:#333333;
-  --cb4:#444444;
-  --cb5:#555555;
-  --cb6:#666666;
+  --cb: #000000;
+  --cb1: #111111;
+  --cb2: #222222;
+  --cb3: #333333;
+  --cb4: #444444;
+  --cb5: #555555;
+  --cb6: #666666;
 
-  --cw:#ffffff;
-  --cw1:#eeeeee;
-  --cw2:#dddddd;
-  --cw3:#cccccc;
-  --cw4:#bbbbbb;
-  --cw5:#aaaaaa;
-  --cw6:#a9a9a9;
+  --cw: #ffffff;
+  --cw1: #eeeeee;
+  --cw2: #dddddd;
+  --cw3: #cccccc;
+  --cw4: #bbbbbb;
+  --cw5: #aaaaaa;
+  --cw6: #a9a9a9;
 
-  --c10:#007bff;
-  --c10dv:#002853;
-  --c10lv:#3d9bff;
+  --c10: #007bff;
+  --c10dv: #002853;
+  --c10lv: #3d9bff;
 
-  --cr:#ff3d94;
-  
+  --cr: #ff3d94;
 }
 * {
   margin: 0;
@@ -32,96 +32,157 @@
   user-select: none;
 }
 
-body{ 
-   font-family: "Poppins", "Segoe UI", sans-serif;
+body {
+  font-family: "Poppins", monospace;
   font-weight: 200;
-  background-color:#1b1b1b;
+  background: var(--cb2);
 }
-section.home > *{
- transform: scale(2);
- opacity: .5;
+section.home > * {
+  transform: scale(2);
+  opacity: 0.5;
 }
 
-.show-time section.home >* {
-  opacity:1;
+.show-time section.home > * {
+  opacity: 1;
   transform: scale(1);
 }
 a {
   text-decoration: none;
   cursor: pointer;
-  font-family:Poppins,monospace;
+  font-family: Poppins, monospace;
 }
-button{
-  font-family: Poppins,monospace;
+button {
+  font-family: Poppins, monospace;
 }
 ::selection {
   background-color: var(--c10lv);
   color: var(--cb);
 }
-section{
+section {
   min-height: 100vh;
   background-color: var(--cb2);
   color: var(--cw2);
-  border-bottom: .5px dashed var(--cb3);
+  border-bottom: 0.5px dashed var(--cb3);
 }
+
+/* ===================== navbar section =================== */
+
+@supports (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+    backdrop-filter: blur(1rem);
+  }
+}
+@supports not (backdrop-filter: blur(1rem)) {
+  .primary-navigation {
+    background-color: #ffffff50;
+    color: #111111;
+  }
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-family: monospace;
+  z-index: 999;
+  width: 70vw;
+  margin: auto auto;
+}
+ul > li > a {
+  color: #ddd;
+  width: max-content;
+}
+.primary-header {
+  position: sticky;
+  top: 0vh;
+  z-index: 500;
+  display: grid;
+  place-content: center;
+}
+.primary-navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.primary-navigation a {
+  text-decoration: none;
+}
+.primary-navigation a > [aria-hidden="true"] {
+  font-weight: 700;
+  margin-inline-end: 0.75em;
+}
+.mobile-nav-toggle {
+  display: none;
+}
+
 /* ===========================home section ==========================================-*/
 
 body > section.home {
   display: grid;
   place-content: center;
+  background-color: var(--cb2);
+  /* border:.5px dashed var(--c10); */
 }
 
 body > section.home > div {
-  margin: auto auto;
+  margin: 0px auto 20vh auto;
   display: grid;
   place-content: center;
-  grid-template-columns:.8fr 1fr auto;
+  grid-template-columns: 0.8fr 1fr auto;
 }
-body > section.home > div > div:nth-child(1){
+body > section.home > div > div:nth-child(1) {
   display: grid;
-  place-content:end;
-
+  place-content: end;
 }
-body > section.home > div > div:nth-child(1) > img{
-border-radius: 50%;
-width: 20vw;
-border: 20px solid var(--cb4);
-filter: drop-shadow(0px 10px 1em var(--cb));
-margin-right: 5vw;
+body > section.home > div > div:nth-child(1) > img {
+  border-radius: 50%;
+  width: calc(100vw / 4.5);
+  border: 20px solid var(--cb4);
+  filter: drop-shadow(0px 10px 1em var(--cb));
+  margin-right: 5vw;
 }
 
-
-body > section.home > div > div:nth-child(2){
+body > section.home > div > div:nth-child(2) {
   display: grid;
   place-content: center;
   align-items: left;
-  grid-gap:0px;
-  width:40vw;
+  grid-gap: 0px;
+  width: 40vw;
+  /* border:.5px dashed var(--c10); */
 }
-body > section.home > div > div:nth-child(2) > h1{
-font-size: 40px;
-text-align: left;
+body > section.home > div > div:nth-child(2) > h1 {
+  font-size: 40px;
+  text-align: left;
+  /* border:.5px dashed var(--c10); */
 }
-body > section.home > div > div:nth-child(2) > p{
-text-align: justify;
-width: 95%;
-  }
-body > section.home > div > div:nth-child(2) >span {
-  color:var(--c10lv);
+body > section.home > div > div:nth-child(2) > p {
+  text-align: justify;
+  width: 95%;
+  /* border:.5px dashed var(--c10); */
+}
+body > section.home > div > div:nth-child(2) > span {
+  color: var(--c10lv);
   animation: clippy 2s infinite 3s;
   width: 50%;
+  /* border:.5px dashed var(--c10); */
 }
-body > section.home > div > div:nth-child(2) >span::before {
+body > section.home > div > div:nth-child(2) > span::before {
   content: "";
   animation: name 20s infinite 3s;
   transition: 0.6s ease-in;
 }
-body > section.home > div > div:nth-child(2) > div:nth-child(4){
+body > section.home > div > div:nth-child(2) > div:nth-child(4) {
   padding: 2.5vh 0 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  /* border:.5px dashed var(--c10); */
 }
-body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1) >button{
+body
+  > section.home
+  > div
+  > div:nth-child(2)
+  > div:nth-child(4)
+  > a:nth-child(1)
+  > button {
   display: grid;
   place-content: center;
   height: 7vh;
@@ -135,19 +196,33 @@ body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1)
   border-radius: 50px;
   cursor: pointer;
   animation: flash 3s infinite;
+  /* border:.5px dashed var(--c10); */
 }
 @keyframes flash {
-  from{
+  from {
     box-shadow: 0px 0px 2rem #007bff10;
   }
-  to{
-    box-shadow:0px 0px 2rem #007bff30;
+  to {
+    box-shadow: 0px 0px 2rem #007bff30;
   }
 }
-body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1) >button:hover{
+body
+  > section.home
+  > div
+  > div:nth-child(2)
+  > div:nth-child(4)
+  > a:nth-child(1)
+  > button:hover {
   background-color: var(--c10);
+  /* border:.5px dashed var(--c10); */
 }
-body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(2) > button{
+body
+  > section.home
+  > div
+  > div:nth-child(2)
+  > div:nth-child(4)
+  > a:nth-child(2)
+  > button {
   display: grid;
   place-content: center;
   height: 7vh;
@@ -159,6 +234,7 @@ body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(2)
   border: 2.5px transparent;
   border-radius: 50px;
   cursor: pointer;
+  /* border:.5px dashed var(--c10); */
 }
 @keyframes clippy {
   0% {
@@ -173,7 +249,7 @@ body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(2)
 }
 
 @keyframes name {
-  0%{
+  0% {
     content: "";
   }
   10% {
@@ -208,24 +284,23 @@ body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(2)
   }
 }
 
-
 /* =========================what I do section ==========================================-*/
 
-body > section.i-do{
+body > section.i-do {
   display: grid;
   place-content: center;
   text-align: center;
   padding: 10vh 0;
 }
-body > section.i-do > h1{
+body > section.i-do > h1 {
   font-weight: 300;
   padding-bottom: 2.5vh;
 }
-body > section.i-do > hr{
+body > section.i-do > hr {
   margin: auto auto;
   width: 20vw;
 }
-body > section.i-do > div{
+body > section.i-do > div {
   width: 80vw;
   margin: auto auto;
   margin-top: 7vh;
@@ -235,7 +310,7 @@ body > section.i-do > div{
   column-gap: 2vw;
   row-gap: 5vh;
 }
-body > section.i-do > div > article{
+body > section.i-do > div > article {
   background-color: var(--cb3);
   border: 2px solid var(--cb4);
   border-radius: 10px;
@@ -243,18 +318,18 @@ body > section.i-do > div > article{
   display: grid;
   place-content: center;
 }
-body > section.i-do > div > article:hover{
+body > section.i-do > div > article:hover {
   transform: translateY(-10px);
   filter: drop-shadow(0px 10px 20px #191919);
 }
-body > section.i-do > div > article > h2{
+body > section.i-do > div > article > h2 {
   color: var(--cw3);
   padding: 2.5vh;
 }
-body > section.i-do > div > article > h2 > i{
+body > section.i-do > div > article > h2 > i {
   color: var(--cw1);
 }
-body > section.i-do > div > article > div{
+body > section.i-do > div > article > div {
   padding: 2.5vh;
 }
 body > section.i-do > div > article > div > a > button {
@@ -267,8 +342,8 @@ body > section.i-do > div > article > div > a > button {
   border-radius: 50px;
   cursor: pointer;
 }
-body > section.i-do > div > article > div > a > button:hover{
-  background-color:var(--c10);
+body > section.i-do > div > article > div > a > button:hover {
+  background-color: var(--c10);
 }
 
 /* =========================about me section ==========================================-*/
@@ -288,15 +363,15 @@ body > section.about-me > h2 {
   font-weight: 300;
 }
 body > section.about-me > hr {
-margin: auto auto;
-width: 20vw;
+  margin: auto auto;
+  width: 20vw;
 }
- div.empty {
+div.empty {
   height: 5vh;
 }
 
-body > section.about-me > div.colored-back{
-  background-color:var(--cb3);
+body > section.about-me > div.colored-back {
+  background-color: var(--cb3);
   color: var(--cw2);
   width: 50vw;
   margin: auto auto;
@@ -310,7 +385,7 @@ body > section.about-me > div.colored-back > div > p {
   text-align: justify;
 }
 body > section.about-me > div.colored-back > div > p > b {
-color: var(--cw1);
+  color: var(--cw1);
 }
 
 /* -============================= technologies section ==========================================*/
@@ -333,16 +408,15 @@ body > section.i-can-use > div > hr {
 body > section.i-can-use > div > div.icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   width: 25vw;
-  background-color:var(--cb3);
+  background-color: var(--cb3);
   border: 1px solid var(--cb4);
   color: var(--cw2);
   border-radius: 10px;
   padding: 5vh 5vw;
   margin: auto auto;
   margin-top: 7vh;
-
 }
 body > section.i-can-use > div > div.icons > div.icon {
   padding: 2vh;
@@ -360,9 +434,8 @@ body > section.projects {
   display: grid;
   place-content: center;
 }
-body > section.projects > div{
+body > section.projects > div {
   margin: auto auto;
-
 }
 body > section.projects > div > p:nth-child(1) {
   font-size: 15px;
@@ -372,31 +445,30 @@ body > section.projects > div > h2 {
   font-weight: 300;
 }
 body > section.projects > div > hr {
-margin: auto auto;
-width: 20vw;
+  margin: auto auto;
+  width: 20vw;
 }
-body > section.projects > div > div{
+body > section.projects > div > div {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
-  place-content: center;  
+  place-content: center;
   margin: auto auto;
   margin-top: 7vh;
 }
-body > section.projects > div > div > div{
-  background-color:var(--cb3);
+body > section.projects > div > div > div {
+  background-color: var(--cb3);
   border: 1px solid var(--cb4);
-  color:var(--cw3);
+  color: var(--cw3);
   border-radius: 10px;
   padding: 10vh;
   width: 30vw;
   margin: auto auto;
-
 }
 
 body > section.projects > div > div > div > h1::before {
   content: "▹ Featured Project : ";
-  font-family: Lobster Two;
+  font-family: Lobster Two, monospace;
   color: var(--cw1);
 }
 body > section.projects > div > div > div > div {
@@ -408,21 +480,21 @@ body > section.projects > div > div > div > div > a {
   padding: 2vh 3vw;
   border-radius: 30px;
 }
-body > section.projects > div > div > div > div > a:hover{
+body > section.projects > div > div > div > div > a:hover {
   filter: drop-shadow(0px 30px 2rem #0000007a);
   transform: translateY(5deg);
 }
-body > section.projects > div > div > div > div > a:nth-child(1){
-background-color: var(--cb4);
-color: var(--cw2);
-filter: drop-shadow(0px 30px 2rem #0000007a);
-padding: 1.5vh 2.5vw;
-font-weight: 400;
-border: 2.5px solid var(--c10);
+body > section.projects > div > div > div > div > a:nth-child(1) {
+  background-color: var(--cb4);
+  color: var(--cw2);
+  filter: drop-shadow(0px 30px 2rem #0000007a);
+  padding: 1.5vh 2.5vw;
+  font-weight: 400;
+  border: 2.5px solid var(--c10);
 }
 
-body > section.projects > div > div > div > div > a:nth-child(1):hover{
-background-color:var(--c10);
+body > section.projects > div > div > div > div > a:nth-child(1):hover {
+  background-color: var(--c10);
 }
 
 /* ===================== worked with section =================== */
@@ -433,10 +505,10 @@ body > section.worked {
   place-content: center;
   height: 100vh;
 }
-body > section.worked > div{
+body > section.worked > div {
   display: grid;
   place-content: center;
-  height:fit-content;
+  height: fit-content;
 }
 body > section.worked > div > h2 {
   padding-bottom: 3vh;
@@ -449,35 +521,34 @@ body > section.worked > div > hr {
 body > section.worked > div > div {
   background-color: var(--cb4);
   border-radius: 10px;
-  width:fit-content;
+  width: fit-content;
   height: 250px;
   width: 250px;
   display: grid;
   place-content: center;
   margin: auto auto;
-  margin-top:7vh;
-border: 1px solid var(--cb6);
+  margin-top: 7vh;
+  border: 1px solid var(--cb6);
 }
 body > section.worked > div > div > div > img {
   width: 10vw;
 }
 /* =====================what happend section =================== */
 
-
 body > section.what-happend {
   display: grid;
   place-content: center;
   text-align: center;
 }
-body > section.what-happend > h1{
-  padding-bottom:2vh;
+body > section.what-happend > h1 {
+  padding-bottom: 2vh;
   font-weight: 300;
 }
-body > section.what-happend > hr{
+body > section.what-happend > hr {
   margin: auto auto;
   width: 20vw;
 }
-body > section.what-happend > div{
+body > section.what-happend > div {
   margin: auto auto;
   margin-top: 7vh;
   display: grid;
@@ -486,7 +557,7 @@ body > section.what-happend > div{
   column-gap: 2.5vw;
   width: 80vw;
 }
-body > section.what-happend > div > div{
+body > section.what-happend > div > div {
   background-color: var(--cb3);
   border: 2px solid var(--cb4);
   border-radius: 10px;
@@ -494,7 +565,7 @@ body > section.what-happend > div > div{
   place-content: center;
   height: 40vh;
 }
-body > section.what-happend > div > div:hover{
+body > section.what-happend > div > div:hover {
   filter: drop-shadow(0px 10px 1em #191919);
   transform: translateY(-15px);
 }
@@ -502,10 +573,12 @@ body > section.what-happend > div > div > i {
   color: var(--c10);
   font-size: 3vw;
   padding-bottom: 2.5vh;
-
 }
 body > section.what-happend > div > div:hover > i {
   filter: drop-shadow(0px 30px 2rem var(--c10));
+}
+body > section.what-happend > div > div > h1 {
+  text-shadow: 0px 0px 1rem #ffffff40;
 }
 
 /* =====================social icons section =================== */
@@ -546,54 +619,50 @@ body > section.social > div.mail {
   text-align: center;
 }
 body > section.social > div.mail > a > button {
-  background-color:var(--cb4);
+  background-color: var(--cb4);
   color: var(--cw2);
   padding: 3vh 7vw;
   border-radius: 50px;
-font-weight: 300;
-font-size: 15px;
-border: none;
-cursor: pointer;
-z-index:2;
+  font-weight: 300;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
 }
 body > section.social > div.mail > a:nth-child(2) {
   background-color: var(--cb3);
-  border:2.5px solid var(--c10lv);
+  border: 2.5px solid var(--c10lv);
   color: var(--cw);
   padding: 2.5vh 6.5vw;
   border-radius: 50px;
   font-weight: bolder;
- font-size: 15px;
- box-shadow: 0px 0px 1rem #007bff20;
- filter: drop-shadow(0px 30px 2rem var(--cb1));
+  font-size: 15px;
+  box-shadow: 0px 0px 1rem #007bff20;
+  filter: drop-shadow(0px 30px 2rem var(--cb1));
 }
-body > section.social > div.mail > a:nth-child(2):hover{
+body > section.social > div.mail > a:nth-child(2):hover {
   background-color: var(--c10lv);
   box-shadow: 0px 0px 1rem #007bff30;
 }
 
-body > section.social > div.mail > a:nth-child(2) > i{
+body > section.social > div.mail > a:nth-child(2) > i {
   transform: rotate(-90deg);
 }
-
-
-
-
 
 /* ===================== built by section =================== */
 
 body > section.built-by {
-  background-color:#1b1b1b;
+  background-color: #191c20;
   background-attachment: fixed;
   min-height: 20vh;
   color: var(--cw4);
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   display: grid;
   place-content: center;
   border: none;
 }
-body > section.built-by > *{
+body > section.built-by > * {
   font-family: monospace;
 }
 body > section.built-by > div:nth-child(1) {
@@ -604,124 +673,26 @@ body > section.built-by > div:nth-child(1) > p:nth-child(1) > a:nth-child(1) {
   font-weight: 400;
   font-family: monospace;
 }
-body > section.built-by > div:nth-child(1) > p:nth-child(1) > a > i{
-  font-size: 12px;
-  color: var(--cb5);
-}
-body > section.built-by > div:nth-child(1) > p:nth-child(1) > a:nth-child(4) {
-  font-size: 16px;
-  color: var(--c10lv);
-  font-weight: bolder;
-  font-weight: 400;
-  font-family: monospace;
-}
-body > section.built-by > div:nth-child(1) > p:nth-child(1) > a ~ br ~i{
-  color:var(--cr);
-}
-
-body > section.built-by > div:nth-child(1) > p:nth-child(2) > a{
+body > section.built-by > div:nth-child(1) > p:nth-child(2) > a {
   color: var(--c10lv);
   font-family: monospace;
-  
-}
-body > section.built-by > div:nth-child(1) > p:nth-child(2) > a > i{
-  color: var(--cb5);
-  
 }
 
-
-/* ===================== announcement section =================== */
-body > div.announcement{
-text-align: center;
-overflow: hidden;
-z-index: 2;
-position:-webkit-sticky;
-position: sticky;
-bottom: 0;
-display: grid;
-place-content: center;
-width: max-content;
-margin: auto auto;
-border: .5px solid var(--cb3);
-padding: 1.5vh 4vw 1.5vh 0 ;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
+body > section.built-by > div:nth-child(1) > p:nth-child(3) {
+  color: var(--cw1);
 }
-@supports (backdrop-filter: blur(5px)){
-  body > div.announcement{
-     backdrop-filter: blur(5px);
-  }
+body > section.built-by > div:nth-child(1) > p:nth-child(3) > :nth-child(1) {
+  color: var(--cr);
 }
-@supports not (backdrop-filter: blur(5px)){
-  body > div.announcement{
-    backdrop-filter: blur(5px);
-  }
+body > section.built-by > div:nth-child(1) > p:nth-child(3) > :nth-child(2) {
+  color: var(--cr);
 }
-body > div.announcement > div{
-  display: grid;
-  place-content: center;
-  grid-template-columns:.5fr 1fr;
+body > section.built-by > div:nth-child(1) > p:nth-child(3) > :nth-child(3) {
+  color: var(--c10lv);
+  font-family: monospace;
 }
-body > div.announcement > div > div{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-background-color: var(--cb2);
-  display: grid;
-  place-content: center;
-  color: var(--c10);
-  margin: auto auto;
-  border: 2px solid var(--cb3);
-  border-bottom-color:var(--c10lv);
-  border-left-color:var(--c10lv);
-  border-top-color:var(--c10lv);
-  animation: border-magic 5s 1;
-}
-@keyframes border-magic {
-  0%{  
-    border: 2px solid var(--cb3);
-    border-top-color:var(--cb3);
-    border-left-color:var(--cb3);
-    border-bottom-color:var(--cb3);
 
-
-  }
-  25%{
-    border: 2px solid var(--cb3);
-    border-top-color:var(--c10lv);
-    border-left-color:var(--cb3);
-    border-bottom-color:var(--cb3);
-
-
-  }
-  50%{
-    border: 2px solid var(--cb3);
-    border-top-color:var(--c10lv);
-    border-left-color:var(--c10lv);
-    border-bottom-color:var(--cb3);
-
-
-  }
-  75%{
-    border: 2px solid var(--cb3);
-    border-top-color:var(--c10lv);
-    border-left-color:var(--c10lv);
-    border-bottom-color:var(--c10lv);
-
-
-  }
-  100%{
-    border: 2px solid var(--cb5);
-    border-top-color:var(--c10lv);
-    border-left-color:var(--c10lv);
-    border-bottom-color:var(--c10lv);
-
-
-  }
-}
-body > div.announcement >div > p{
-color: var(--cw1);
-place-content: left;
-margin: auto auto;
-width: fit-content;
+i.fa-external-link-alt {
+  color: var(--cw);
+  font-size: 8px;
 }

@@ -13,6 +13,7 @@
     padding-bottom: 10vh;
   }
   body > section.home > div {
+    margin: auto auto;
     display: grid;
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr;
@@ -45,30 +46,33 @@
   body > section.home > div > div:nth-child(2) > p {
     text-align: justify;
   }
-  body > section.home > div > div:nth-child(2) > span::before {
+  body > section.home > div > div:nth-child(2) > span {
     display: none;
   }
-  body > section.home > div > div:nth-child(2) > span::after {
-    content: "";
-    animation: name 20s infinite 3s;
-    transition: 0.6s ease-in;
-  }
-  body > section.home > div > div:nth-child(2) > span {
-    color: var(--c10lv);
-    animation: clippy 2s infinite 3s;
+
+  body > section.home > div > div:nth-child(2) > div:nth-child(4) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  body > section.home > div > div:nth-child(2) > div:nth-child(4){
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  body
+    > section.home
+    > div
+    > div:nth-child(2)
+    > div:nth-child(4)
+    > a:nth-child(1)
+    > button {
+    width: 90%;
+    border: 2.5px solid var(--c10);
   }
-
-  body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(1) >button{
-  width: 90%;
-  border:2.5px solid var(--c10);
-  }
-  body > section.home > div > div:nth-child(2) > div:nth-child(4) > a:nth-child(2) > button{
-  width: 90%;
+  body
+    > section.home
+    > div
+    > div:nth-child(2)
+    > div:nth-child(4)
+    > a:nth-child(2)
+    > button {
+    width: 90%;
   }
 
   /* =========================what I do section ==========================================-*/
@@ -77,7 +81,7 @@
     display: grid;
     place-content: center;
   }
-  body > section.i-do > h1{
+  body > section.i-do > h1 {
     font-size: 20px;
   }
   body > section.i-do > hr {
@@ -88,7 +92,7 @@
     grid-template-columns: none;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-  body > section.i-do > div > article > h2{
+  body > section.i-do > div > article > h2 {
     font-size: 18px;
   }
   body > section.i-do > div > article > p {
@@ -111,7 +115,7 @@
   body > section.about-me > hr {
     width: 40vw;
   }
-  body > section.about-me > div.colored-back{
+  body > section.about-me > div.colored-back {
     width: 70vw;
     padding: 05vh;
     display: grid;
@@ -126,7 +130,7 @@
   body > section.i-can-use > div > p:nth-child(1) {
     font-size: 13px;
   }
-  body > section.i-can-use > div > h2{
+  body > section.i-can-use > div > h2 {
     font-size: 23px;
   }
   body > section.i-can-use > div > hr {
@@ -168,9 +172,9 @@
   body > section.worked > div > hr {
     width: 40vw;
   }
-  body > section.worked > div > div{
+  body > section.worked > div > div {
     height: 200px;
-    width:200px;
+    width: 200px;
   }
   body > section.worked > div > div > div > img {
     width: 25vw;
@@ -202,7 +206,7 @@
   }
 
   /* social icons section ==========================================*/
-  body > section.social{
+  body > section.social {
     height: 90vh;
   }
   body > section.social > h2 {
@@ -263,22 +267,64 @@
   body > section.built-by {
     font-size: 10px;
   }
-  body > section.built-by > div:nth-child(1) > p > a:nth-child(4) {
-    font-size: 14px;
+  body > section.built-by > div:nth-child(1) {
+    width: 90vw;
+  }
+  body > section.built-by > div:nth-child(1) > p:nth-child(3) > :nth-child(3) {
+    color: var(--cr);
+    font-family: monospace;
   }
 
-  /* ===================== announcement section =================== */
-body > div.announcement{
-  width: 80vw;
-  }
-  
-  body > div.announcement >div > p{
-font-size: 13px;
-  }
-  body > div.announcement > div > div{
-    height:47px;
-    width: 47px;
-  }
+  /* ===================== navbar section =================== */
 
+  .mobile-nav-toggle {
+    background-position: center;
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    background: url("/assets/media/hambuger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    backdrop-filter: blur(2rem) brightness(200%);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background-image: url("/assets/media/close.svg");
+    background-color: transparent;
+  }
+}
+@media (max-width: 35em) {
+  .primary-navigation {
+    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    z-index: 1000;
+    position: fixed;
+    inset: 0 0 0 30%;
+    padding: min(30vh, 10rem) 2rem;
+    transform: translateX(100%);
+  }
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+}
 
+@media (min-width: 35em) and (max-width: 55em) {
+  .primary-navigation a > span[aria-hidden] {
+    display: none;
+  }
+}
+@media (min-width: 35em) {
+  .primary-navigation {
+    padding-block: 2rem;
+    padding-inline: clamp(3rem, 9vw, 10rem);
+  }
 }
