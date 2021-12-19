@@ -74,7 +74,7 @@ section {
 }
 @supports not (backdrop-filter: blur(1rem)) {
   .primary-navigation {
-    background-color: #ffffff50;
+    background-color: #00000050;
     color: #111111;
   }
 }
