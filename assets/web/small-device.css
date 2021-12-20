@@ -286,7 +286,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
-    backdrop-filter: blur(2rem) brightness(200%);
+    background-color:#eeeeee50;
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
