@@ -3,7 +3,7 @@
 </h6>
 <hr>
 <div align="center">
-  <img alt="Logo" src="https://mahtamun-hoque-fahim.github.io/assets/media/favicon.png" width="70vw" />
+  <img alt="Logo" src="https://mahtamun-hoque-fahim.github.io/assets/media/favicon.png" height="80vh" />
 </div>
 <h1 align="center">
   My portfolio v6
