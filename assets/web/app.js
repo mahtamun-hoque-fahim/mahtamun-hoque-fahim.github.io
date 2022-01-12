@@ -13,6 +13,7 @@ document.onkeydown = function (e) {
     return false;
   }
   if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+    alert("stop!");
     return false;
   }
   if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
@@ -52,16 +53,9 @@ let heart = document.querySelector('.fa-heart');
 let blue = document.querySelector('.blue');
 
 codeCounter.innerHTML = 478+698+330+47;
-builtBy.addEventListener('mouseover',()=>{
-  codeCounter.style.cssText = "text-shadow:0px 0px 2em var(--cr);";
-  heart.style.cssText = "filter:drop-shadow(0px 0px 1em var(--cr));";
-  blue.style.cssText = "filter:drop-shadow(0px 0px 1em var(--c10lv));";
-})
-builtBy.addEventListener('mouseout',()=>{
-  codeCounter.style.cssText = "text-shadow:0px 0px 0em var(--cr);filter:drop-shadow(0px 0px 0em var(--c10lv));";
-  heart.style.cssText = "filter:drop-shadow(0px 0px 0em var(--cr));";
-  blue.style.cssText = "filter:drop-shadow(0px 0px 0em var(--c10lv));";
-})
+codeCounter.style.cssText = "text-shadow:0px 0px 0em var(--cr);filter:drop-shadow(0px 0px 0em var(--c10lv));";
+heart.style.cssText = "filter:drop-shadow(0px 0px 0em var(--cr));";
+blue.style.cssText = "filter:drop-shadow(0px 0px 0em var(--c10lv));";
 
 
 
