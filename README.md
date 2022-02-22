@@ -30,7 +30,7 @@
 <p font-size="5px">[ Writing this kind of readme was an idea of <a href="https://brittanychiang.com/?ref=fahim.pages.dev" target="_blank">Brittany Chiang </a> ] </p>
 
 <h5 align="center">And <b>yes</b>, you can always fork this repo. Just give me appropriate credit by attaching my portfolio link in appropriate area of your website.</h5>
-<h4 align="center">For example: ©2029 , Barry Allen. All rights reserved[or not!].<br>Designed and coded with huge ❤️ by <a href="https://fahim.pages.dev/?ref=anonomous_user" target="_blank">Fahim</a></h4>
+<h4 align="center">For example: ©2029 , Barry Allen. All rights reserved.Designed and coded with huge ❤️ by <a href="https://fahim.pages.dev/?ref=anonomous_user" target="_blank">Fahim</a></h4>
   <h3 align="center">That's all I wanted to say!! Thank you! </h3>
 
 <hr>
