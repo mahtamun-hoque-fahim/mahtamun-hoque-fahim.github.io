@@ -24,7 +24,7 @@
 
 <h2 align="center">Forking this repo 🎯 (important ⚠️ )</h2>
 
-<p>Some people have asked me if they can use this code for their own website, and the answer to that question is usually <b>yes, with proper attribution</b>.
+<p>Some people have asked me if they can use this code for their own website, and the answer to that question is usually <b>yes, with appropriate credit</b>.
 
 <p>I value keeping my site and it's code open source, but as you all know, <b>plagiarism is bad</b>. It's always disheartening whenever I find that someone has copied and pasted my site without giving me a bit of credit. I spent a huge amount of effort building and designing this iteration of my website, and I am proud of it! <br> <b>So, what I need to say is not to claim all of my effort as your own</b>.</p>
 <p font-size="5px">[ Writing this kind of readme was an idea of <a href="https://brittanychiang.com/?ref=fahim.pages.dev" target="_blank">Brittany Chiang </a> ] </p>
