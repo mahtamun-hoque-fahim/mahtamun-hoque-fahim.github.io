@@ -521,6 +521,7 @@ body > section.worked > div {
   display: grid;
   place-content: center;
   height: fit-content;
+  width: 80vw;
 }
 body > section.worked > div > h2 {
   padding-bottom: 3vh;
@@ -535,19 +536,16 @@ body > section.worked > div > div {
   border-radius: 10px;
   width: fit-content;
   height: 250px;
-  width: 250px;
+  width: 70vw;
   display: grid;
   place-content: center;
   margin: auto auto;
   margin-top: 7vh;
   border: 1px solid var(--cb6);
 }
-body > section.worked > div > div > div > img {
-  width: 10vw;
-}
 /* infinite scroller  */
 .scroller {
-  max-width: 600px;
+  border: 0.5px dashed red;
 }
 
 .scroller__inner {
@@ -606,9 +604,8 @@ body > section.worked > div > div > div > img {
 
 .tag-list li {
   padding: 1rem;
-  background: var(--clr-primary-400);
+  background:;
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
 }
 
 /* for testing purposed to ensure the animation lined up correctly */
