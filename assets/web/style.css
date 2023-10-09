@@ -613,6 +613,10 @@ body > section.worked > div > div {
   background: red !important;
 }
 
+body > section.worked .worked-logo {
+  aspect-ratio: 1/1;
+}
+
 /* =====================what happend section =================== */
 
 body > section.what-happend {
