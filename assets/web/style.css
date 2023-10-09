@@ -535,7 +535,7 @@ body > section.worked > div > div {
   background-color: var(--cb4);
   border-radius: 10px;
   width: fit-content;
-  height: 250px;
+  height: 40vh;
   width: 70vw;
   display: grid;
   place-content: center;
