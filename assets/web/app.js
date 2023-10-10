@@ -23,57 +23,71 @@ document.onkeydown = function (e) {
 let clickedElement = document.querySelector(".disabled");
 clickedElement.addEventListener("click", () => {
   clickedElement.innerHTML = "Not ready!";
-  clickedElement.style.cssText = "display: grid;place-content: center;height: 7vh;width: 13vw;border-radius: 50px;background-color: var(--cb3);color: var(--cw6);font-weight: 400;border: 2.5px transparent;border-radius: 50px;cursor: pointer;width:100%";
-}
-)
+  clickedElement.style.cssText =
+    "display: grid;place-content: center;height: 7vh;width: 13vw;border-radius: 50px;background-color: var(--cb3);color: var(--cw6);font-weight: 400;border: 2.5px transparent;border-radius: 50px;cursor: pointer;width:100%";
+});
 
 window.onload = function () {
-  document.documentElement.classList.add('show-time');
+  document.documentElement.classList.add("show-time");
 };
 const primaryNav = document.querySelector(".primary-navigation");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 
-navToggle.addEventListener('click', () => {
+navToggle.addEventListener("click", () => {
   const visibility = primaryNav.getAttribute("data-visible");
 
   if (visibility === "false") {
     primaryNav.setAttribute("data-visible", true);
-    navToggle.setAttribute('aria-expanded', true);
+    navToggle.setAttribute("aria-expanded", true);
   } else if (visibility === "true") {
     primaryNav.setAttribute("data-visible", false);
-    navToggle.setAttribute('aria-expanded', false);
-  };
-}
-);
+    navToggle.setAttribute("aria-expanded", false);
+  }
+});
 
-let builtBy = document.querySelector('.built-by');
-let codeCounter = document.querySelector('.codeCounter');
-let heart = document.querySelector('.fa-heart');
-let blue = document.querySelector('.blue');
+let builtBy = document.querySelector(".built-by");
+let codeCounter = document.querySelector(".codeCounter");
+let heart = document.querySelector(".fa-heart");
+let blue = document.querySelector(".blue");
 
-codeCounter.innerHTML = 478+698+330+47;
-builtBy.addEventListener('mouseover',()=>{
+codeCounter.innerHTML = 478 + 698 + 330 + 47;
+builtBy.addEventListener("mouseover", () => {
   codeCounter.style.cssText = "text-shadow:0px 0px 2em var(--cr);";
   heart.style.cssText = "filter:drop-shadow(0px 0px 1em var(--cr));";
   blue.style.cssText = "filter:drop-shadow(0px 0px 1em var(--c10lv));";
-})
-builtBy.addEventListener('mouseout',()=>{
-  codeCounter.style.cssText = "text-shadow:0px 0px 0em var(--cr);filter:drop-shadow(0px 0px 0em var(--c10lv));";
+});
+builtBy.addEventListener("mouseout", () => {
+  codeCounter.style.cssText =
+    "text-shadow:0px 0px 0em var(--cr);filter:drop-shadow(0px 0px 0em var(--c10lv));";
   heart.style.cssText = "filter:drop-shadow(0px 0px 0em var(--cr));";
   blue.style.cssText = "filter:drop-shadow(0px 0px 0em var(--c10lv));";
-})
+});
 
+// =-===========  infinite scroll animation  ===================//
 
+const scrollers = document.querySelectorAll(".scroller");
 
-/*  display: grid;
-place-content: center;
-height: 7vh;
-width: 13vw;
-border-radius: 50px;
-background-color: var(--cb3);
-color: var(--cw6);
-font-weight: 400;
-border: 2.5px transparent;
-border-radius: 50px;
+// If a user hasn't opted in for recuded motion, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  addAnimation();
+}
 
-cursor: pointer; */
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    // add data-animated="true" to every `.scroller` on the page
+    scroller.setAttribute("data-animated", true);
+
+    // Make an array from the elements within `.scroller-inner`
+    const scrollerInner = scroller.querySelector(".scroller__inner");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    // For each item in the array, clone it
+    // add aria-hidden to it
+    // add it into the `.scroller-inner`
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
+}
