@@ -19,17 +19,17 @@ document.onkeydown = function (e) {
     return false;
   }
 };
-
-let clickedElement = document.querySelector(".disabled");
+let clickedElement = document.querySelector(".pagenr");
 clickedElement.addEventListener("click", () => {
-  clickedElement.innerHTML = "Not ready!";
+  clickedElement.innerHTML = "Page Not ready!";
   clickedElement.style.cssText =
     "display: grid;place-content: center;height: 7vh;width: 13vw;border-radius: 50px;background-color: var(--cb3);color: var(--cw6);font-weight: 400;border: 2.5px transparent;border-radius: 50px;cursor: pointer;width:100%";
 });
 
-window.onload = function () {
-  document.documentElement.classList.add("show-time");
-};
+
+// window.onload = function () {
+//   document.documentElement.classList.add("show-time");
+// };
 const primaryNav = document.querySelector(".primary-navigation");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 

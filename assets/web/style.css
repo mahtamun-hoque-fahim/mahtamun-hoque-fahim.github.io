@@ -33,6 +33,7 @@
 html {
   color-scheme: dark;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -47,27 +48,32 @@ body {
   font-weight: 200;
   background: var(--cb2);
 }
-section.home > * {
+
+/* section.home>* {
   transform: scale(2);
   opacity: 0.5;
 }
 
-.show-time section.home > * {
+.show-time section.home>* {
   opacity: 1;
   transform: scale(1);
-}
+} */
+
 a {
   text-decoration: none;
   cursor: pointer;
   font-family: Poppins, monospace;
 }
+
 button {
   font-family: Poppins, monospace;
 }
+
 ::selection {
   background-color: var(--c10lv);
   color: var(--cb);
 }
+
 section {
   min-height: 100vh;
   background-color: var(--cb2);
@@ -82,6 +88,7 @@ section {
     backdrop-filter: blur(1rem);
   }
 }
+
 @supports not (backdrop-filter: blur(1rem)) {
   .primary-navigation {
     background-color: #11111190;
@@ -97,10 +104,12 @@ ul {
   width: 70vw;
   margin: auto auto;
 }
-ul > li > a {
+
+ul>li>a {
   color: #ddd;
   width: max-content;
 }
+
 .primary-header {
   position: sticky;
   top: 0vh;
@@ -108,42 +117,48 @@ ul > li > a {
   display: grid;
   place-content: center;
 }
+
 .primary-navigation {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 .primary-navigation a {
   text-decoration: none;
 }
-.primary-navigation a > [aria-hidden="true"] {
+
+.primary-navigation a>[aria-hidden="true"] {
   font-weight: 700;
   margin-inline-end: 0.75em;
 }
+
 .mobile-nav-toggle {
   display: none;
 }
 
 /* ===========================home section ==========================================-*/
 
-body > section.home {
+body>section.home {
   display: grid;
   place-content: center;
   background-color: var(--cb2);
   /* border:.5px dashed var(--c10); */
 }
 
-body > section.home > div {
+body>section.home>div {
   margin: 0px auto 20vh auto;
   display: grid;
   place-content: center;
   grid-template-columns: 0.8fr 1fr auto;
 }
-body > section.home > div > div:nth-child(1) {
+
+body>section.home>div>div:nth-child(1) {
   display: grid;
   place-content: end;
 }
-body > section.home > div > div:nth-child(1) > img {
+
+body>section.home>div>div:nth-child(1)>img {
   border-radius: 50%;
   width: calc(100vw / 4.5);
   border: 20px solid var(--cb4);
@@ -151,7 +166,7 @@ body > section.home > div > div:nth-child(1) > img {
   margin-right: 5vw;
 }
 
-body > section.home > div > div:nth-child(2) {
+body>section.home>div>div:nth-child(2) {
   display: grid;
   place-content: center;
   align-items: left;
@@ -159,40 +174,64 @@ body > section.home > div > div:nth-child(2) {
   width: 40vw;
   /* border:.5px dashed var(--c10); */
 }
-body > section.home > div > div:nth-child(2) > h1 {
+
+body>section.home>div>div:nth-child(2)>h1 {
   font-size: 40px;
   text-align: left;
   /* border:.5px dashed var(--c10); */
 }
-body > section.home > div > div:nth-child(2) > p {
+
+body>section.home>div>div:nth-child(2)>p {
   text-align: justify;
   width: 95%;
   /* border:.5px dashed var(--c10); */
 }
-body > section.home > div > div:nth-child(2) > span {
+
+/* body>section.home>div>div:nth-child(2)>span {
   color: var(--c10lv);
   animation: clippy 2s infinite 3s;
   width: 50%;
   /* border:.5px dashed var(--c10); */
+*/ body>section.home>div>div:nth-child(2)>span {
+  border: .5px dashed var(--c10);
 }
-body > section.home > div > div:nth-child(2) > span::before {
-  content: "";
-  animation: name 20s infinite 3s;
+
+body>section.home>div>div:nth-child(2)>span.mytags::before {
+  content: "Artist";
+  animation: name 20s infinite forwards;
   transition: 0.6s ease-in;
+  background-color: var(--cb3);
+  padding: .3rem 1rem;
+  border-radius: 1rem;
+  color: var(--cw3);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
-body > section.home > div > div:nth-child(2) > div:nth-child(4) {
+
+@keyframes name {
+  0% {
+    content: "Front-end dev";
+  }
+50%{
+  content: "Front-end Dev";
+}
+  60% {
+    content: "Graphic designer";
+  }
+
+  100% {
+    content: "UI/UX Designer";
+  }
+}
+
+
+body>section.home>div>div:nth-child(2)>div:nth-child(4) {
   padding: 2.5vh 0 0 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* border:.5px dashed var(--c10); */
 }
-body
-  > section.home
-  > div
-  > div:nth-child(2)
-  > div:nth-child(4)
-  > a:nth-child(1)
-  > button {
+
+body>section.home>div>div:nth-child(2)>div:nth-child(4)>a:nth-child(1)>button {
   display: grid;
   place-content: center;
   height: 7vh;
@@ -208,31 +247,23 @@ body
   animation: flash 3s infinite;
   /* border:.5px dashed var(--c10); */
 }
+
 @keyframes flash {
   from {
     box-shadow: 0px 0px 2rem #007bff10;
   }
+
   to {
     box-shadow: 0px 0px 2rem #007bff30;
   }
 }
-body
-  > section.home
-  > div
-  > div:nth-child(2)
-  > div:nth-child(4)
-  > a:nth-child(1)
-  > button:hover {
+
+body>section.home>div>div:nth-child(2)>div:nth-child(4)>a:nth-child(1)>button:hover {
   background-color: var(--c10);
   /* border:.5px dashed var(--c10); */
 }
-body
-  > section.home
-  > div
-  > div:nth-child(2)
-  > div:nth-child(4)
-  > a:nth-child(2)
-  > button {
+
+body>section.home>div>div:nth-child(2)>div:nth-child(4)>a:nth-child(2)>button {
   display: grid;
   place-content: center;
   height: 7vh;
@@ -246,71 +277,27 @@ body
   cursor: pointer;
   /* border:.5px dashed var(--c10); */
 }
-@keyframes clippy {
-  0% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  50% {
-    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-  }
-  100% {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-}
-
-@keyframes name {
-  0% {
-    content: "";
-  }
-  10% {
-    content: "Frontend developer";
-  }
-  20% {
-    content: "Graphic designer";
-  }
-  30% {
-    content: "UI/UX designer";
-  }
-  40% {
-    content: "Wing Chun student";
-  }
-  50% {
-    content: "Left winger";
-  }
-  60% {
-    content: "swimming lover";
-  }
-  70% {
-    content: "Linux Maniac";
-  }
-  80% {
-    content: "Artist";
-  }
-  90% {
-    content: "NCC cadet";
-  }
-  100% {
-    content: "Wicket Keeper";
-  }
-}
 
 /* =========================what I do section ==========================================-*/
 
-body > section.i-do {
+body>section.i-do {
   display: grid;
   place-content: center;
   text-align: center;
   padding: 10vh 0;
 }
-body > section.i-do > h1 {
+
+body>section.i-do>h1 {
   font-weight: 300;
   padding-bottom: 2.5vh;
 }
-body > section.i-do > hr {
+
+body>section.i-do>hr {
   margin: auto auto;
   width: 20vw;
 }
-body > section.i-do > div {
+
+body>section.i-do>div {
   width: 80vw;
   margin: auto auto;
   margin-top: 7vh;
@@ -320,7 +307,8 @@ body > section.i-do > div {
   column-gap: 2vw;
   row-gap: 5vh;
 }
-body > section.i-do > div > article {
+
+body>section.i-do>div>article {
   background-color: var(--cb3);
   border: 2px solid var(--cb4);
   border-radius: 10px;
@@ -328,21 +316,26 @@ body > section.i-do > div > article {
   display: grid;
   place-content: center;
 }
-body > section.i-do > div > article:hover {
+
+body>section.i-do>div>article:hover {
   transform: translateY(-10px);
   filter: drop-shadow(0px 10px 20px #191919);
 }
-body > section.i-do > div > article > h2 {
+
+body>section.i-do>div>article>h2 {
   color: var(--cw3);
   padding: 2.5vh;
 }
-body > section.i-do > div > article > h2 > i {
+
+body>section.i-do>div>article>h2>i {
   color: var(--cw1);
 }
-body > section.i-do > div > article > div {
+
+body>section.i-do>div>article>div {
   padding: 2.5vh;
 }
-body > section.i-do > div > article > div > a > button {
+
+body>section.i-do>div>article>div>a>button {
   background-color: var(--cb4);
   color: var(--cw2);
   filter: drop-shadow(0px 30px 2rem var(--cb1));
@@ -352,35 +345,40 @@ body > section.i-do > div > article > div > a > button {
   border-radius: 50px;
   cursor: pointer;
 }
-body > section.i-do > div > article > div > a > button:hover {
+
+body>section.i-do>div>article>div>a>button:hover {
   background-color: var(--c10);
 }
 
 /* =========================about me section ==========================================-*/
 
-body > section.about-me {
+body>section.about-me {
   text-align: center;
   display: grid;
   place-content: center;
   height: 100vh;
   padding-bottom: 10vh;
 }
-body > section.about-me > p:nth-child(1) {
+
+body>section.about-me>p:nth-child(1) {
   font-size: 15px;
 }
-body > section.about-me > h2 {
+
+body>section.about-me>h2 {
   padding-bottom: 3vh;
   font-weight: 300;
 }
-body > section.about-me > hr {
+
+body>section.about-me>hr {
   margin: auto auto;
   width: 20vw;
 }
+
 div.empty {
   height: 5vh;
 }
 
-body > section.about-me > div.colored-back {
+body>section.about-me>div.colored-back {
   background-color: var(--cb3);
   color: var(--cw2);
   width: 50vw;
@@ -390,32 +388,36 @@ body > section.about-me > div.colored-back {
   border: 1px solid var(--cb4);
   border-radius: 10px;
 }
-body > section.about-me > div.colored-back > div > p {
+
+body>section.about-me>div.colored-back>div>p {
   font-size: 18px;
   text-align: justify;
 }
-body > section.about-me > div.colored-back > div > p > b {
+
+body>section.about-me>div.colored-back>div>p>b {
   color: var(--cw1);
 }
 
 /* -============================= technologies section ==========================================*/
 
-body > section.i-can-use {
+body>section.i-can-use {
   text-align: center;
   padding: 5vh 0;
   display: grid;
   place-content: center;
 }
-body > section.i-can-use > div > h2 {
+
+body>section.i-can-use>div>h2 {
   padding-bottom: 3vh;
   font-weight: 300;
 }
-body > section.i-can-use > div > hr {
+
+body>section.i-can-use>div>hr {
   margin: auto auto;
   width: 20vw;
 }
 
-body > section.i-can-use > div > div.icons {
+body>section.i-can-use>div>div.icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -428,7 +430,8 @@ body > section.i-can-use > div > div.icons {
   margin: auto auto;
   margin-top: 7vh;
 }
-body > section.i-can-use > div > div.icons > div.icon {
+
+body>section.i-can-use>div>div.icons>div.icon {
   padding: 2vh;
   font-size: 30px;
   padding: 4vh 0;
@@ -437,28 +440,33 @@ body > section.i-can-use > div > div.icons > div.icon {
 
 /* ===================    Projects section    ====================== */
 
-body > section.projects {
+body>section.projects {
   text-align: center;
   padding: 10vh 0;
   color: var(--cw2);
   display: grid;
   place-content: center;
 }
-body > section.projects > div {
+
+body>section.projects>div {
   margin: auto auto;
 }
-body > section.projects > div > p:nth-child(1) {
+
+body>section.projects>div>p:nth-child(1) {
   font-size: 15px;
 }
-body > section.projects > div > h2 {
+
+body>section.projects>div>h2 {
   padding-bottom: 3vh;
   font-weight: 300;
 }
-body > section.projects > div > hr {
+
+body>section.projects>div>hr {
   margin: auto auto;
   width: 20vw;
 }
-body > section.projects > div > div {
+
+body>section.projects>div>div {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
@@ -466,7 +474,8 @@ body > section.projects > div > div {
   margin: auto auto;
   margin-top: 7vh;
 }
-body > section.projects > div > div > div {
+
+body>section.projects>div>div>div {
   background-color: var(--cb3);
   border: 1px solid var(--cb4);
   color: var(--cw3);
@@ -476,27 +485,31 @@ body > section.projects > div > div > div {
   margin: auto auto;
 }
 
-body > section.projects > div > div > div > h1::before {
+body>section.projects>div>div>div>h1::before {
   content: "▹ Featured Project : ";
   font-family:
     Lobster Two,
     monospace;
   color: var(--cw1);
 }
-body > section.projects > div > div > div > div {
+
+body>section.projects>div>div>div>div {
   padding: 5vh 0 0 0;
 }
-body > section.projects > div > div > div > div > a {
+
+body>section.projects>div>div>div>div>a {
   background-color: var(--cb5);
   color: var(--cw1);
   padding: 2vh 3vw;
   border-radius: 30px;
 }
-body > section.projects > div > div > div > div > a:hover {
+
+body>section.projects>div>div>div>div>a:hover {
   filter: drop-shadow(0px 30px 2rem #0000007a);
   transform: translateY(5deg);
 }
-body > section.projects > div > div > div > div > a:nth-child(1) {
+
+body>section.projects>div>div>div>div>a:nth-child(1) {
   background-color: var(--cb4);
   color: var(--cw2);
   filter: drop-shadow(0px 30px 2rem #0000007a);
@@ -505,47 +518,65 @@ body > section.projects > div > div > div > div > a:nth-child(1) {
   border: 2.5px solid var(--c10);
 }
 
-body > section.projects > div > div > div > div > a:nth-child(1):hover {
+body>section.projects>div>div>div>div>a:nth-child(1):hover {
   background-color: var(--c10);
 }
 
 /* ===================== worked with section =================== */
 
-body > section.worked {
+
+body>section.worked {
   text-align: center;
   display: grid;
   place-content: center;
   height: 100vh;
+  background: var(--cb1);
 }
-body > section.worked > div {
+
+body>section.worked>div {
   display: grid;
   place-content: center;
   height: fit-content;
   width: 80vw;
 }
-body > section.worked > div > h2 {
+
+body>section.worked>div>h2 {
   padding-bottom: 3vh;
   font-weight: 300;
 }
-body > section.worked > div > hr {
-  margin: auto auto;
+
+body>section.worked>div>hr {
+  margin: 0 auto 6vh auto;
   width: 15vw;
 }
-body > section.worked > div > div {
-  background-color: var(--cb4);
-  border-radius: 10px;
-  width: fit-content;
-  height: 40vh;
-  width: 70vw;
+
+section.worked>div>div.logo-list>ul>li>div {
+  aspect-ratio: 1;
+  width: 15vw;
+  background-color: var(--cb2);
+  border: .5px solid var(--cb3);
+  border-radius: 2rem;
   display: grid;
   place-content: center;
-  margin: auto auto;
-  margin-top: 7vh;
-  border: 1px solid var(--cb6);
+  padding: 2rem;
 }
+
+section.worked>div>div.logo-list>ul>li>div>img.worked-logo {
+  height: 10vh;
+}
+
+section.worked>div>div.logo-list>ul>li>div:hover>img.worked-logo {
+  filter: drop-shadow(0px 0px 2rem #ffffff50);
+}
+
+section.worked>div>div.logo-list>ul>li>div>img.change-size {
+  height: 20vh;
+}
+
 /* infinite scroller  */
-.scroller {
-  border: 0.5px dashed red;
+.scroller .logo-list {
+
+  width: 80vw;
 }
 
 .scroller__inner {
@@ -557,21 +588,18 @@ body > section.worked > div > div {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
+  -webkit-mask: linear-gradient(90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent);
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -604,8 +632,20 @@ body > section.worked > div > div {
 
 .tag-list li {
   padding: 1rem;
-  background:;
   border-radius: 0.5rem;
+}
+
+section.worked>div>div.logo-list>ul>li>label {
+  color: var(--cw3);
+  border: .5px dashed var(--cb4);
+  padding: .3rem .8rem;
+  font-size: .7rem;
+  border-radius: 1rem;
+  margin: 4rem -5rem 0 0;
+}
+
+section.worked>div>div.logo-list>ul>li:hover>label {
+  background-color: var(--cb4);
 }
 
 /* for testing purposed to ensure the animation lined up correctly */
@@ -613,26 +653,29 @@ body > section.worked > div > div {
   background: red !important;
 }
 
-body > section.worked .worked-logo {
+body>section.worked .worked-logo {
   aspect-ratio: 1/1;
 }
 
 /* =====================what happend section =================== */
 
-body > section.what-happend {
+body>section.what-happend {
   display: grid;
   place-content: center;
   text-align: center;
 }
-body > section.what-happend > h1 {
+
+body>section.what-happend>h1 {
   padding-bottom: 2vh;
   font-weight: 300;
 }
-body > section.what-happend > hr {
+
+body>section.what-happend>hr {
   margin: auto auto;
   width: 20vw;
 }
-body > section.what-happend > div {
+
+body>section.what-happend>div {
   margin: auto auto;
   margin-top: 7vh;
   display: grid;
@@ -641,7 +684,8 @@ body > section.what-happend > div {
   column-gap: 2.5vw;
   width: 80vw;
 }
-body > section.what-happend > div > div {
+
+body>section.what-happend>div>div {
   background-color: var(--cb3);
   border: 2px solid var(--cb4);
   border-radius: 10px;
@@ -649,60 +693,71 @@ body > section.what-happend > div > div {
   place-content: center;
   height: 40vh;
 }
-body > section.what-happend > div > div:hover {
+
+body>section.what-happend>div>div:hover {
   filter: drop-shadow(0px 10px 1em #191919);
   transform: translateY(-15px);
 }
-body > section.what-happend > div > div > i {
+
+body>section.what-happend>div>div>i {
   color: var(--c10);
   font-size: 3vw;
   padding-bottom: 2.5vh;
 }
-body > section.what-happend > div > div:hover > i {
+
+body>section.what-happend>div>div:hover>i {
   filter: drop-shadow(0px 30px 2rem var(--c10));
 }
-body > section.what-happend > div > div > h1 {
+
+body>section.what-happend>div>div>h1 {
   text-shadow: 0px 0px 1rem #ffffff40;
 }
 
 /* =====================social icons section =================== */
 
-body > section.social {
+body>section.social {
   padding: 10vh;
   display: grid;
   place-content: center;
   height: 90vh;
   border: none;
 }
-body > section.social > p {
+
+body>section.social>p {
   text-align: center;
 }
-body > section.social > h2 {
+
+body>section.social>h2 {
   padding-bottom: 3vh;
   text-align: center;
   font-weight: 300;
 }
-body > section.social > hr {
+
+body>section.social>hr {
   margin: auto auto;
   width: 20vw;
 }
-body > section.social > div.icons {
+
+body>section.social>div.icons {
   display: flex;
   padding: 5vh 0;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-body > section.social > div.icons > a > div.icon {
+
+body>section.social>div.icons>a>div.icon {
   padding: 0 2vw;
   font-size: 30px;
   color: var(--c10lv);
 }
-body > section.social > div.mail {
+
+body>section.social>div.mail {
   padding-bottom: 10vh;
   text-align: center;
 }
-body > section.social > div.mail > a > button {
+
+body>section.social>div.mail>a>button {
   background-color: var(--cb4);
   color: var(--cw2);
   padding: 3vh 7vw;
@@ -713,7 +768,8 @@ body > section.social > div.mail > a > button {
   cursor: pointer;
   z-index: 2;
 }
-body > section.social > div.mail > a:nth-child(2) {
+
+body>section.social>div.mail>a:nth-child(2) {
   background-color: var(--cb3);
   border: 2.5px solid var(--c10lv);
   color: var(--cw);
@@ -724,18 +780,19 @@ body > section.social > div.mail > a:nth-child(2) {
   box-shadow: 0px 0px 1rem #007bff20;
   filter: drop-shadow(0px 30px 2rem var(--cb1));
 }
-body > section.social > div.mail > a:nth-child(2):hover {
+
+body>section.social>div.mail>a:nth-child(2):hover {
   background-color: var(--c10lv);
   box-shadow: 0px 0px 1rem #007bff30;
 }
 
-body > section.social > div.mail > a:nth-child(2) > i {
+body>section.social>div.mail>a:nth-child(2)>i {
   transform: rotate(-90deg);
 }
 
 /* ===================== built by section =================== */
 
-body > section.built-by {
+body>section.built-by {
   background-color: #191c20;
   background-attachment: fixed;
   min-height: 20vh;
@@ -746,32 +803,39 @@ body > section.built-by {
   place-content: center;
   border: none;
 }
-body > section.built-by > * {
+
+body>section.built-by>* {
   font-family: monospace;
 }
-body > section.built-by > div:nth-child(1) {
+
+body>section.built-by>div:nth-child(1) {
   padding: 2.5vh;
 }
-body > section.built-by > div:nth-child(1) > p:nth-child(1) > a:nth-child(1) {
+
+body>section.built-by>div:nth-child(1)>p:nth-child(1)>a:nth-child(1) {
   color: var(--c10lv);
   font-weight: 400;
   font-family: monospace;
 }
-body > section.built-by > div:nth-child(1) > p:nth-child(2) > a {
+
+body>section.built-by>div:nth-child(1)>p:nth-child(2)>a {
   color: var(--c10lv);
   font-family: monospace;
 }
 
-body > section.built-by > div:nth-child(1) > p:nth-child(3) {
+body>section.built-by>div:nth-child(1)>p:nth-child(3) {
   color: var(--cw1);
 }
-body > section.built-by > div:nth-child(1) > p:nth-child(3) > :nth-child(1) {
+
+body>section.built-by>div:nth-child(1)>p:nth-child(3)> :nth-child(1) {
   color: var(--cr);
 }
-body > section.built-by > div:nth-child(1) > p:nth-child(3) > :nth-child(2) {
+
+body>section.built-by>div:nth-child(1)>p:nth-child(3)> :nth-child(2) {
   color: var(--cr);
 }
-body > section.built-by > div:nth-child(1) > p:nth-child(3) > :nth-child(3) {
+
+body>section.built-by>div:nth-child(1)>p:nth-child(3)> :nth-child(3) {
   color: var(--c10lv);
   font-family: monospace;
 }
