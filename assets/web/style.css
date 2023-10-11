@@ -558,7 +558,7 @@ section.worked>div>div.logo-list>ul>li>div {
   border-radius: 2rem;
   display: grid;
   place-content: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 section.worked>div>div.logo-list>ul>li>div>img.worked-logo {
