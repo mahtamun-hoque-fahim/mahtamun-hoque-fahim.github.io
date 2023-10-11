@@ -24,26 +24,25 @@
 
 <h2 align="center">Forking this repo 🎯 (important ⚠️ )</h2>
 
-<p>Some people have asked me if they can use this code for their own website, and the answer to that question is usually <b>yes, with appropriate credit</b>.
+<p>Some people have asked me if they can use this code for their website, and the answer to that question is usually <b>yes, with appropriate credit</b>.
 
-<p>I value keeping my site and it's code open source, but as you all know, <b>plagiarism is bad</b>. It's always disheartening whenever I find that someone has copied and pasted my site without giving me a bit of credit. I spent a huge amount of effort building and designing this iteration of my website, and I am proud of it! <br> <b>So, what I need to say is not to claim all of my effort as your own</b>.</p>
+<p>I value keeping my site and its code open source, but as you all know, <b>plagiarism is bad</b>. It's always disheartening whenever I find that someone has copied and pasted my site without giving me a bit of credit. I spent a huge amount of effort building and designing this iteration of my website, and I am proud of it! <br> <b>So, what I need to say is not to claim all of my efforts as your own</b>.</p>
 <p font-size="5px">[ Writing this kind of readme was an idea of <a href="https://brittanychiang.com/?ref=fahim.pages.dev" target="_blank">Brittany Chiang </a> ] </p>
 
-<h5 align="center">And <b>yes</b>, you can always fork this repo. Just give me appropriate credit by attaching my portfolio link in appropriate area of your website.</h5>
+<h5 align="center">And <b>yes</b>, you can always fork this repo. Just give me the appropriate credit by attaching my portfolio link in the appropriate area of your website.</h5>
 <h4 align="center">For example: ©2029 , Barry Allen. All rights reserved.Designed and coded with huge ❤️ by <a href="https://fahim.pages.dev/?ref=anonomous_user" target="_blank">Fahim</a></h4>
   <h3 align="center">That's all I wanted to say!! Thank you! </h3>
 
 <hr>
 <h2> Wanna contribute?</h2>
-<p>well,It's pretty streight forward!</p>
+<p> Well, It's pretty straightforward, you know!</p>
 <ul>
   <li>Visit my portfolio [once again]</li>
   <li>Pick the thug! [or the bug!] </li>
-  <li>Choose the file from directory , where bug is being spotted</li>
   <li>Make a pull request</li>
-  <li>Give me some time [cause ,I'm busy you know!]</li>
+  <li>Give me some time [cause, I'm busy you know!]</li>
     <ul>
-      <li>In the mean time you might wanna say <a href="mailto:mahtamunhoquefahim@pm.me?subject=Hellow Fahim !!&body=Your text here" target="_blank"
+      <li>In the meantime you might wanna say <a href="mailto:mahtamunhoquefahim@pm.me?subject=Hellow Fahim !!&body=Your text here" target="_blank"
                                                 rel="noopener">hi! </a>
       </li>
     </ul>
