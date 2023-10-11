@@ -10,7 +10,7 @@
 </h1>
 <hr>
 <p align="center">
-  The sixth iteration of <a href="https://fahim.pages.dev/?ref=github-readme" target="_blank">my portfolio</a> hosted using <b>Cloudflare pages</b>.
+  The 7th iteration of <a href="https://fahim.pages.dev/?ref=github-readme" target="_blank">my portfolio</a> hosted using <b>Cloudflare pages</b>.
 </p>
 
 <img src="https://raw.githubusercontent.com/mahtamun-hoque-fahim/mahtamun-hoque-fahim.github.io/main/assets/media/site-preview.png" align="center">
