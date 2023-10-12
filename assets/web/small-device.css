@@ -328,3 +328,69 @@
     padding-inline: clamp(3rem, 9vw, 10rem);
   }
 }
+
+/* ===================== worked with section only =================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section.worked > div > div.logo-list > ul > li > div {
+    width: max-content;
+    aspect-ratio: 1;
+    padding: 3rem;
+  }
+
+  section.worked > div > div.logo-list > ul > li > div > img.worked-logo {
+    height: 10vh;
+  }
+  section.worked > div > div.logo-list > ul > li:nth-child(7) > div > img {
+    width: 20vw !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  section.worked > div > div.logo-list > ul > li > div {
+    height: 15vh;
+    width: max-content;
+    aspect-ratio: 1;
+    padding: 3rem;
+  }
+
+  section.worked > div > div.logo-list > ul > li > div > img.worked-logo {
+    height: 10vh;
+  }
+
+  section.worked > div > div.logo-list > ul > li:nth-child(7) > div > img {
+    width: 10vw !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  section.worked > div > div.logo-list > ul > li:nth-child(7) > div > img {
+    width: 10vw;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  section.worked > div > div.logo-list > ul > li > div {
+    height: 15vh;
+    width: max-content;
+    aspect-ratio: auto/1;
+    padding: 3rem;
+  }
+
+  section.worked > div > div.logo-list > ul > li > div > img.worked-logo {
+    height: 10vh !important;
+  }
+
+  section.worked > div > div.logo-list > ul > li:nth-child(7) > div > img {
+    width: 10vw !important;
+  }
+}
+
