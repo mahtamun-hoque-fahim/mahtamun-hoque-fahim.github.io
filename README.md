@@ -31,3 +31,7 @@
    I don't want my code to be better , Simple! 😆 </br>
    but if you wanna <a href="mailto:mahtamunhoquefahim@pm.me" target="_blank">say hi</a>, your'e welcome!
 </p>
+
+<hr>
+<h3 align="center">Retirement notice (Claude Zen session, Sept 2026)</h3>
+<p>This site is being retired in favor of <a href="https://mahtamunhoquefahim.vercel.app" target="_blank">mahtamunhoquefahim.vercel.app</a>. Changes made: canonical tag + client-side redirect pointing at the live site, plus Google/Bing site-verification tags (already present but unused/commented) enabled so the domain can be verified in Search Console and Bing Webmaster Tools and submitted for removal from search results. The <code>index.html</code> also now carries a second verification tag for <code>fahim.pages.dev</code>, since that Cloudflare Pages deployment builds from this same repo. Once removal from both search engines is confirmed, these verification tags can be deleted. Left as a note in case a different Claude session/instance picks this up later.</p>
